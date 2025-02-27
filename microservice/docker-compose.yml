@@ -1,29 +1,51 @@
 version: "3"
 services:
-  frontend:
+  frontend-react:
+    depends_on:
+      - backend-cart-order
     build:
       context: ./react-app
     image: react-app
     container_name: react-app
-    ports:
-      - "5000:5000"
+    # ports:
+    #   - "5000:5000"
+    expose:
+      - "5000"
     environment:
       - VITE_APP_PORT=5000
+      - VITE_EXPRESS_BE_URL=http://127.0.0.1
     networks:
-      - microservice_public
-  backend:
+      - micro-private
+  backend-cart-order:
     build:
       context: ./express-app
     image: express-app
     container_name: express-app
-    ports:
-      - "9000:9000"
+    # ports:
+    #   - "9000:9000"
+    expose:
+      - "9000"
     environment:
       - APP_PORT=9000
     networks:
-      - microservice_public
+      - micro-private
+  nginx-proxy:
+    build:
+      context: .
+      dockerfile: Dockerfile.nginx
+    container_name: nginx-proxy
+    ports:
+      - "80:80"
+    networks:
+      - app-network
+    depends_on:
+      - backend-cart-order
+      - frontend-react
+    networks:
+      - micro-private
+      - micro-public
 networks:
-  microservice_public:
+  micro-public:
     driver: bridge
-  microservice_private:
-    driver: none
+  micro-private:
+    driver: bridge
