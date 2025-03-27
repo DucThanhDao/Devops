@@ -1,0 +1,160 @@
+// Styling for the masthead
+.masterhead {
+  width: 100vw;
+  .masterhead__mobile-image {
+    text-align: center;
+  }
+
+  .masterhead__background {
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+
+    img {
+      display: inline-block;
+      width: 54%;
+    }
+  }
+
+  .digital__background {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    z-index: -1;
+  }
+
+  .heading_color {
+    color: #17c6ff;
+  }
+
+  .bg--blur {
+    -webkit-backdrop-filter: saturate(150%) blur(25px);
+    backdrop-filter: saturate(150%) blur(25px);
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .intro-text {
+    margin-top: 200px;
+    width: 50%;
+    text-align: left;
+
+    .intro-heading {
+      // color: #003866;
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+    }
+
+    .intro-lead-in {
+      margin-bottom: 1.5rem !important;
+      // color: #506491;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.255px;
+      margin: 0;
+      line-height: 27px;
+      font-style: normal;
+    }
+  }
+
+  .masterhead-content {
+    @media (min-width: 992px) {
+      position: absolute;
+      right: 0;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @include media-breakpoint-down("lg") {
+    height: auto;
+    margin-bottom: 100px;
+  }
+
+  @include media-breakpoint-down("md") {
+    .masterhead__background {
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      width: 54%;
+    }
+
+    .digital__background {
+      width: 100vw;
+      height: 200px;
+      background: #fff;
+    }
+
+    .intro-text {
+      margin-top: 64px;
+      width: 50%;
+      text-align: left;
+    }
+
+    .heading_color {
+      color: #0078d1;
+    }
+  }
+
+  @include media-breakpoint-down("lg") {
+    .masterhead__background {
+      height: 200px;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+
+    .intro-text {
+      width: 100%;
+      text-align: center;
+    }
+
+    .intro-overlay {
+      background: url("/static/img/landing/snow-responsive.png") no-repeat
+        center center;
+      position: absolute;
+      left: -10%;
+    }
+
+    .navbar {
+      background-color: #fff;
+      z-index: 100;
+      .navbar-brand {
+        img {
+          left: 50%;
+        }
+      }
+      .navbar-toggler {
+        .navbar-toggler-icon {
+          background-image: none;
+          color: #00c9ff !important;
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down("sm") {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .masterhead{
+    .intro-text {
+      margin-top: 100px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .masterhead {
+    margin-bottom: 50px;
+    
+    .intro-text {
+      margin-top: 50px;
+    }
+  }
+}
+

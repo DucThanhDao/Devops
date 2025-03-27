@@ -1,0 +1,99 @@
+.portfolio-detail-page {
+  width: 100vw;
+
+  .portfolio-head {
+    background-color: #eff0f147;
+  }
+  .portfolio-head__mobile-image {
+    text-align: center;
+  }
+  .portfolio-head__background {
+    @media screen and (max-width: 768px) {
+      padding-left: 34px !important;
+      padding-right: 34px !important;
+    }
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: right;
+    padding: 5rem 4rem 0 4rem;
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    @media screen and (min-width: 992px) {
+      text-align: right;
+      padding: 0 0 0 4rem;
+      img {
+        display: inline-block;
+        width: 55%;
+      }
+    }
+  }
+  .portfolio-head__content {
+    @media screen and (min-width: 768px) {
+      padding-left: 34px !important;
+    }
+    @media screen and (min-width: 992px) {
+      width: 45%;
+      position: sticky;
+      background: transparent;
+      top: 15vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      float: left;
+      padding-left: 30px !important;
+    }
+    @media screen and (min-width: 1024px) {
+      padding-left: 42px !important;
+    }
+    @media screen and (min-width: 1440px) {
+      padding-left: 32px !important;
+    }
+    @media screen and (min-width: 1600px) {
+      padding-left: 227.5px !important;
+    }
+  }
+  .portfolio-navigate {
+    .navigate-button:hover {
+      border-bottom: 1px solid #17c1e8;
+    }
+  }
+
+  .portfolio-next-card {
+    background-color: #f9f8fa;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
+    > div {
+      width: 250px;
+      height: 115px;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: inherit;
+      border-radius: inherit;
+      background-color: inherit;
+    }
+    > div:first-child {
+      height: 160px;
+      display: none;
+      padding: 0;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .portfolio-next-card:hover .portfolio-next-card__image {
+    box-shadow: none;
+    display: block !important;
+  }
+  .portfolio-next-card:hover .portfolio-next-card__content {
+    border-radius: 0 0 0.75rem 0.75rem;
+    box-shadow: none;
+  }
+}

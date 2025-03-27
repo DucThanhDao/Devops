@@ -1,0 +1,45 @@
+.cta {
+  .header-cta {
+    a {
+      border-radius: 0.375rem;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+    }
+
+    // &.dropdown-active {
+    //   border-bottom: 2px solid $primary;
+    // }
+
+    &.no-hover:hover {
+      opacity: 1 !important;
+      cursor: default !important;
+    }
+  }
+
+  .rotate-icon {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .reset-icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 991px) {
+  .cta {
+    .header-cta {
+      padding: 10px 0;
+      margin: 0 15px;
+      border-bottom: 1px solid #7a7a7a5e;
+      &.dropdown-active {
+        // border-bottom: none;
+        border-radius: 2px;
+      }
+    }
+  }
+}

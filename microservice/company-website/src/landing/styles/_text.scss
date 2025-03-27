@@ -1,0 +1,13 @@
+.app-text--accent {
+  color: $primary;
+}
+
+.u-clickable {
+  cursor: pointer;
+}
+
+.text {
+  &--primary {
+    color: $primary !important;
+  }
+}

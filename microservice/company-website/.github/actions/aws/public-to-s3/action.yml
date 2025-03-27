@@ -1,0 +1,38 @@
+name: Push to files | Folders to S3
+description: "Authorize with AWS by OIDC and publish files and folders"
+inputs:
+  aws_region:
+    description: "AWS Region"
+    required: true
+  aws_oidc_role_arn:
+    description: "IAM OIDC ARN"
+    required: true
+  directory:
+    description: 'Files/ folders directory to publish'
+    required: true
+  destination:
+    description: "S3 Destination"
+    required: true
+    default: ""
+  s3_bucket_name:
+    description: "S3 Bucket Name without s3:// prefix"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: Configure AWS Credentials with IAM OIDC credentials
+      uses: aws-actions/configure-aws-credentials@v4
+      with:
+        aws-region: ${{ inputs.aws_region }}
+        role-to-assume: ${{ inputs.aws_oidc_role_arn }}
+        role-session-name: GitHubActions
+
+    - name: Sts GetCallerIdentity
+      shell: bash
+      run: |
+        aws sts get-caller-identity
+      
+    - name: Sync multiple folders to S3
+      shell: bash
+      run: |
+        aws s3 sync "${{ inputs.directory }}" "s3://${{ inputs.s3_bucket_name }}/${{ inputs.destination }}" --delete

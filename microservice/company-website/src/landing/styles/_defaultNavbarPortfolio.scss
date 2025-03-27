@@ -1,0 +1,30 @@
+.navbar-portfolio {
+  padding: 10px 8%;
+  border-bottom: 1px solid #eaeaea;
+  box-shadow: 2px 2px 2px #eaeaea;
+  .navbar-toggler {
+    border: none;
+    .navbar-toggler-icon {
+      background-image: none;
+      color: #00c9ff !important;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+  .nav-item {
+    .nav-link {
+      color: #003866;
+      font-weight: 600;
+      font-size: 16px !important;
+    }
+    &.nav-link.active {
+      color: none !important;
+    }
+    .nav-link:last-child {
+      .nav-item-contact {
+        background: linear-gradient(to right bottom, #00aeef, #00c9ff);
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,815 @@
+{
+  "metadata": {
+    "title": "Dayone - Chúng tôi xây dựng các ứng dụng web và di động hiện đại, có khả năng mở rộng",
+    "description": "DayOne Teams là một công ty phát triển phần mềm và tư vấn công nghệ chuyên nghiệp, hỗ trợ bạn trong mọi giai đoạn phát triển sản phẩm...",
+    "url": "https://dayoneteams.com/vi",
+    "image": "https://dayoneteams.com/assets/img/og-image-vi.png",
+    "digitalImage": "https://dayoneteams.com/assets/img/digital-transformation/preview-vi-2.png"
+  },
+  "data": {
+    "badge": "Hoàn thành mục tiêu",
+    "heading": "Hợp tác toàn cầu",
+    "description": "Kinh nghiệm nhiều năm trong việc phát triển các sản phẩm công nghệ tiên tiến.",
+    "top1": "Phát triển",
+    "bottom1": "Sản phẩm",
+    "top2": "Cùng với",
+    "bottom2": "Khách hàng",
+    "top3": "Đến từ",
+    "bottom3": "Quốc gia"
+  },
+  "whyIsDayOne": {
+    "title": "Vì sao là Dayone?",
+    "subTitle": "Nhóm Đặc Nhiệm Theo Sứ Mệnh",
+    "content": "Đội ngũ của chúng tôi là một nhóm chuyên trách theo nhiệm vụ, được định hình bởi sự hợp tác, đam mê và xuất sắc. Mỗi thành viên đóng góp điểm mạnh riêng, cùng tạo ra môi trường thúc đẩy đổi mới. Đam mê giúp chúng tôi vượt qua thử thách, và cam kết xuất sắc đảm bảo mọi mục tiêu được hoàn thành vượt mong đợi.",
+    "teamwork": "Hợp tác",
+    "excellence": "Xuất sắc",
+    "passion": "Đam mê",
+    "explore": "Khám phá thêm"
+  },
+  "whatYouLookingFor": {
+    "step1": {
+      "title": "Khả năng giải quyết vấn đề xuất sắc",
+      "description": "Nhanh chóng và chủ động giải quyết vấn đề với phương pháp hiệu quả.",
+      "percent": "60%",
+      "backTitle": "khách hàng chọn chúng tôi vì đặc điểm này",
+      "backDescription": "Khách hàng tin vào khả năng giải quyết vấn đề sáng tạo và nhanh chóng của chúng tôi, được thể hiện qua kết quả chất lượng cao."
+    },
+    "step2": {
+      "title": "Tự do để trao đổi",
+      "description": "Luôn giao tiếp thoải mái và cởi mở đảm bảo thống nhất ý kiến, giúp công việc vận hành trôi chảy.",
+      "percent": "80%",
+      "backTitle": "Khách hàng quay lại Dayone nhờ phương pháp này",
+      "backDescription": "Thông qua giao tiếp, khách hàng của chúng tôi luôn cảm thấy mình là một phần quan trọng trong việc đóng góp vào thành công của sản phẩm."
+    },
+    "step3": {
+      "title": "Ý thức trách nhiệm cao",
+      "description": "Chúng tôi có tinh thần trách nhiệm làm chủ dự án của mình, không tâm lý nạn nhân.",
+      "percent": "100%",
+      "backTitle": "khách hàng hài lòng vì phẩm chất này",
+      "backDescription": "Khách hàng yêu thích cách chúng tôi cam kết sự trách nhiệm và xây dựng lòng tin thông qua sự tận tâm trong công việc."
+    },
+    "step4": {
+      "title": "Tư duy sản phẩm vững vàng",
+      "description": "Coi trọng việc phát triển sản phẩm hướng tới người dùng và hiệu quả cho kinh doanh.",
+      "percent": "90%",
+      "backTitle": "Khách hàng tiếp tục đồng hành cùng chúng tôi",
+      "backDescription": "Chúng tôi không làm việc cho bạn, mà làm việc cùng bạn. Tư duy ấy giúp chúng tôi thúc đẩy sự hợp tác, làm nền tảng cho thành công vượt trội."
+    },
+    "heading": "Tối Ưu cho",
+    "heading2": "Phát triển Doanh nghiệp",
+    "subHeading": "Chúng tôi cam kết mang đến những phẩm chất của một đội ngũ ưu tú, đáp ứng hoàn hảo kỳ vọng của bạn.",
+    "button": "Liên hệ ngay"
+  },
+  "navbar": {
+    "services": "Dịch Vụ",
+    "industries": "Lĩnh vực",
+    "ourWorks": "Dự án",
+    "career": "Nghề nghiệp",
+    "aboutUs": "Về DayOne",
+    "button": "LIÊN HỆ NGAY"
+  },
+  "masterhead": {
+    "heading1": "Tạo Phần Mềm Chất Lượng",
+    "heading2": "Với Đội Ngũ Hiệu Suất Cao",
+    "description": "Dayone là một công ty sáng tạo công nghệ, chuyên phát triển phần mềm với quy trình phát triển tập trung vào người dùng, đội ngũ có chuyên môn kỹ thuật vững vàng và khả năng giao tiếp xuất sắc. Chúng tôi giúp doanh nghiệp của bạn mở rộng một cách hiệu quả và duy trì lợi thế cạnh tranh trong thị trường thay đổi nhanh chóng.",
+    "button": "LIÊN HỆ NGAY"
+  },
+  "services": {
+    "badge": "Dịch vụ",
+    "heading": "Vươn tới thành công",
+    "description": "Khám phá các giải pháp công nghệ mở đường cho sự thành công. Dịch vụ của chúng tôi được thiết kế để trang bị cho doanh nghiệp của bạn những giải pháp tiên tiến, nắm chắc vị trí tiên phong trong thời đại kỹ thuật số năng động.",
+    "button": "XEM THÊM",
+    "design": {
+      "heading": "Thiết kế UI/UX",
+      "description1": "Ưu tiên hệ thống thiết kế",
+      "description2": "Giao diện hướng tới người dùng",
+      "link": "Tìm hiểu thêm"
+    },
+    "productStrategy": {
+      "heading": "Product Strategy & Management",
+      "description1": "Lập kế hoạch theo hướng kết quả",
+      "description2": "Phát triển nhanh và liên tục"
+    },
+    "webMobileApp": {
+      "heading": "Web & Mobile App Development",
+      "description1": "Đáng tin cậy",
+      "description2": "Hiệu năng cao",
+      "description3": "Thân thiện người dùng",
+      "description4": "Tối ưu SEO & ASO",
+      "link": "Khám phá ngay"
+    },
+    "engineeringTeam": {
+      "heading": "Dedicated Engineering Team",
+      "description1": "Phát triển toàn diện Web, Mobile và Backend",
+      "description2": "DevOps & Đảm bảo độ tin cậy",
+      "description3": "Phân tích kinh doanh thông minh",
+      "description4": "Dữ liệu lớn & Trí tuệ nhân tạo",
+      "link": "Đội ngũ chúng tôi"
+    }
+  },
+  "contactSection": {
+    "title": "TRAO ĐỔI CÙNG CHÚNG TÔI",
+    "description": "Có câu hỏi hay nhận xét nào? Hãy gửi cho chúng tôi một tin nhắn!",
+    "buttonText": "LIÊN HỆ NGAY"
+  },
+  "contactForm": {
+    "contactSection": {
+      "title": "BẠN CẦN HỖ TRỢ?",
+      "description": "Hãy cùng thảo luận cách chúng tôi nâng cao sản phẩm của bạn!",
+      "buttonText": "GỬI NGAY"
+    },
+    "formFields": {
+      "name": "Tên Của Bạn",
+      "email": "Email Công Việc",
+      "phone": "Số Điện Thoại (tuỳ chọn)",
+      "content": "Chúng tôi có thể giúp gì cho bạn?"
+    },
+    "placeHolders": {
+      "name": "Nhập tên của bạn",
+      "email": "Nhập email của bạn",
+      "phone": "Nhập số điện thoại của bạn",
+      "content": "Hãy cho chúng tôi biết ý tưởng hoặc dự án của bạn"
+    },
+    "errorMessages": {
+      "name": "Vui lòng nhập tên",
+      "email": "Vui lòng nhập email",
+      "phone": "Vui lòng nhập số điện thoại",
+      "content": "Vui lòng nhập nội dung"
+    },
+    "submitButton": {
+      "default": "GỬI NGAY",
+      "loading": "Đang Gửi..."
+    },
+    "contactInformation": {
+      "heading": "Thông Tin Liên Hệ",
+      "subheading": "Liên hệ ngay để nhận được phản hồi trong thời gian sớm nhất.",
+      "address": "Quận Tân Bình, TP. Hồ Chí Minh, Việt Nam"
+    }
+  },
+  "workCarousel": {
+    "badge": "Dự án",
+    "heading": "Dự án nổi bật",
+    "link": "Xem thêm"
+  },
+  "technologies": {
+    "heading": "CÔNG NGHỆ",
+    "description": "Xây dựng hệ thống hiện đại đẳng cấp thế giới với công nghệ tiến bộ."
+  },
+  "testimonials": {
+    "heading": "các vị khách hài lòng"
+  },
+  "industries": {
+    "artificialIntelligent": "Trí tuệ nhân tạo",
+    "blockchain": "Blockchain",
+    "hospitality": "Khách sạn",
+    "productivity": "Sản xuất",
+    "education": "Giáo dục",
+    "healthcare": "Chăm sóc sức khỏe",
+    "foodBeverage": "Thực phẩm & Đồ uống",
+    "realEstate": "Bất động sản",
+    "travel": "Du lịch",
+    "communicationServices": "Dịch vụ truyền thông",
+    "consumerServices": "Dịch vụ tiêu dùng"
+  },
+  "footer": {
+    "dayOne": "Vẫn luôn là DayOne!",
+    "home": "Trang Chủ",
+    "technology": "Công Nghệ",
+    "career": "Nghề Nghiệp",
+    "letTalk": "Liên hệ ngay",
+    "company": "Về công ty",
+    "Connect": "Liên hệ",
+    "testimonials": "Phản hồi từ khách hàng",
+    "clients": "Khách Hàng Của Chúng Tôi",
+    "ourworks": "Dự án",
+    "howWeWork": "Văn hóa làm việc",
+    "contact": "Liên hệ",
+    "aboutUs": "Giới Thiệu",
+    "copyrightLeft": "Bản quyền © ",
+    "copyrightRight": ". Tất cả quyền được bảo lưu. Dayone Software Technology Ltd.",
+    "cookieMessage": "Chúng tôi sử dụng cookie để giúp website hoạt động tốt hơn và nắm bắt hiệu quả hoạt động của trang.",
+    "understand": "Đã hiểu",
+    "address": "Địa chỉ",
+    "addressDetail": "133 Đường Trần Thị Trọng, Phường 15, Quận Tân Bình, Thành phố Hồ Chí Minh",
+    "social": "Xã hội",
+    "industries": "Lĩnh vực",
+    "ourServices": "Dịch vụ",
+    "webDevelopment": "Phát triển Web",
+    "appDevelopment": "Phát triển Ứng dụng",
+    "digitalTransformation": "Chuyển đổi số",
+    "cyberSecurity": "An ninh mạng",
+    "cloudComputing": "Điện toán đám mây",
+    "productStrategy": "Chiến lược sản phẩm",
+    "artificialIntelligent": "Trí tuệ nhân tạo",
+    "blockchain": "Blockchain",
+    "hospitality": "Khách sạn",
+    "productivity": "Sản xuất",
+    "education": "Giáo dục",
+    "healthcare": "Chăm sóc sức khỏe",
+    "foodBeverage": "Thực phẩm & Đồ uống",
+    "realEstate": "Bất động sản",
+    "travel": "Du lịch",
+    "communicationServices": "Dịch vụ truyền thông",
+    "consumerServices": "Dịch vụ tiêu dùng"
+  },
+  "pageNotFound": {
+    "notFoundTitle": "404",
+    "notFoundSubTitle": "Không tìm thấy trang",
+    "returnHome": "Quay lại Trang Chủ"
+  },
+  "aboutUsSlug": {
+    "leadership": "Ban lãnh đạo",
+    "developmentTeam": "Nhóm phát triển",
+    "about": "Giới thiệu về",
+    "backButton": "Quay lại"
+  },
+  "aboutUs": {
+    "leadership": "Ban lãnh đạo",
+    "leadershipDescription": "Đội ngũ lãnh đạo của chúng tôi có trên 10 năm kinh nghiệm trong lĩnh vực Phát triển Phần mềm.",
+    "ourDevelopmentTeam": "Đội ngũ kỹ thuật",
+    "readBio": "Xem thêm"
+  },
+  "jobDetail": {
+    "applyNow": "Ứng tuyển ngay",
+    "applyDescription": "Gửi CV của bạn đến phòng nhân sự"
+  },
+  "careerPage": {
+    "joinTeams": "Tham gia DayoneTeams",
+    "unleashProgress": "Khai phóng tiềm năng vô hạn",
+    "journeyDescription": "Cùng DayoneTeams dấn thân vào cuộc hành trình kiến tạo nên tầm nhìn, đồng thời biến những khát vọng thành hiện thực.",
+    "goToJobs": "Tìm hiểu",
+    "whyJoin": "Tại sao là Dayone",
+    "offerMore": "Không chỉ đơn thuần là công việc",
+    "supportCommunity": ", chúng tôi cung cấp một cộng đồng hỗ trợ cho việc phát triển nghề nghiệp và cá nhân. Hãy trở thành một phần của Dayone để cùng nhau kiến tạo nên thành công.",
+    "challengingProjects": "Dự án đầy thách thức",
+    "creditCard": "thẻ tín dụng",
+    "unlockPotential": "Mở khóa tiềm năng của bạn trong các dự án đầy thử thách cùng đội ngũ Dayone.",
+    "workWithSmartPeople": "Làm việc với những người thông minh",
+    "collaborateBrilliantMinds": "Hợp tác với những bộ óc xuất sắc, nâng cao sự nghiệp của bạn.",
+    "careerAdvancement": "Thăng tiến nghề nghiệp",
+    "fuelAscent": "Tiếp sức cho sự thăng tiến của bạn cùng công nghệ Dayone: Nơi sự thăng tiến nghề nghiệp không có giới hạn.",
+    "noJobOpening": "Hiện tại không có công việc.",
+    "keepInTouch": "Giữ liên lạc",
+    "topJobsOpening": "Cơ hội việc làm hàng đầu",
+    "basket": "rổ",
+    "spaceship": "tàu vũ trụ",
+    "connectSocialMedia": "Kết nối với chúng tôi trên các nền tảng mạng xã hội để tham gia vào cuộc trò chuyện, tham gia thảo luận và là người đầu tiên nghe về các cơ hội việc làm khi có."
+  },
+  "dropdown": {
+    "industries": "Lĩnh vực",
+    "ourServices": "Dịch vụ",
+    "webDevelopment": "Phát triển Web",
+    "appDevelopment": "Phát triển Ứng dụng",
+    "digitalTransformation": "Chuyển đổi số",
+    "cyberSecurity": "An ninh mạng",
+    "cloudComputing": "Điện toán đám mây",
+    "productStrategy": "Chiến lược sản phẩm",
+    "artificialIntelligent": "Trí tuệ nhân tạo",
+    "blockchain": "Blockchain",
+    "hospitality": "Khách sạn",
+    "productivity": "Sản xuất",
+    "education": "Giáo dục",
+    "healthcare": "Chăm sóc sức khỏe",
+    "foodBeverage": "Thực phẩm & Đồ uống",
+    "realEstate": "Bất động sản",
+    "travel": "Du lịch",
+    "communicationServices": "Dịch vụ truyền thông",
+    "consumerServices": "Dịch vụ tiêu dùng"
+  },
+  "filter": {
+    "All": "Tất cả",
+    "Artificial Intelligent": "Trí tuệ nhân tạo",
+    "Blockchain": "Blockchain",
+    "Hospitality": "Khách sạn",
+    "Education": "Giáo dục",
+    "Healthcare": "Chăm sóc sức khỏe",
+    "Food & Beverage": "Thực phẩm & Đồ uống",
+    "Digital Marketing": "Chuyển đổi số",
+    "Real Estate": "Bất động sản",
+    "Communication services": "Dịch vụ truyền thông",
+    "Consumer services": "Dịch vụ tiêu dùng",
+    "Travel": "Du lịch",
+    "Productivity": "Chiến lược sản phẩm"
+  },
+  "client": {
+    "heading1": "Chúng tôi làm việc chặt chẽ",
+    "heading2": "Với những đối tác",
+    "description1": "Chúng tôi thực sự hoà hợp với khách hàng, đảm bảo sự đồng hành, minh bạch và hiệu quả lâu dài.",
+    "description2": "Chúng tôi không chỉ dừng lại ở việc ra mắt sản phẩm — Chúng tôi vẫn luôn tiếp tục đồng hành, hoàn thiện, mở rộng và cải tiến liên tục",
+    "exploreOurWork": "Khám phá thêm"
+  },
+  "jobItem": {
+    "jobDetail": "Chi tiết công việc"
+  },
+  "jobOpening": {
+    "topJobsOpening": "Cơ hội việc làm hàng đầu"
+  },
+  "modalCV": {
+    "applyForThisJob": "Ứng tuyển công việc",
+    "applyYourCV": "Ứng tuyển CV của bạn",
+    "name": "Tên",
+    "emailAddress": "Địa chỉ email",
+    "phone": "Số điện thoại",
+    "chooseYourCVFile": "* Chọn tệp CV",
+    "applyNow": "Ứng tuyển ngay"
+  },
+  "portfolioDetailPage": {
+    "allProjects": "Quay lại",
+    "letsCollaborate": "HỢP TÁC CÙNG CHÚNG TÔI",
+    "gotAProject": "Bạn có dự án?",
+    "letsTalk": "Liên hệ ngay",
+    "teamDescription": "Chúng tôi là một đội ngũ sáng tạo, say mê với các ý tưởng độc đáo và sẵn sàng giúp các doanh nghiệp tạo dựng được bản sắc riêng biệt bằng cách cung cấp các giải pháp công nghệ hàng đầu."
+  },
+  "webDevelopment": {
+    "feature1": {
+      "title": "Phát triển web hiện đại",
+      "description": "Đảm bảo tính bảo mật, trực quan và khả năng linh hoạt mở rộng cho các ứng dụng web, được trang bị bởi công nghệ tiến bộ nhất."
+    },
+    "feature2": {
+      "title": "Đồng bộ hóa mục tiêu",
+      "description": "Thông qua quá trình hợp tác, Dayone hiểu rõ các mục tiêu của doanh nghiệp và sẽ tùy chỉnh trang web sao cho phù hợp với mong muốn của khách hàng, đảm bảo hiệu quả kinh doanh cao nhất."
+    },
+    "feature3": {
+      "title": "Hiệu suất cao",
+      "description": "Trang web được xây dựng để có thời gian tải nhanh, phản hồi nhanh với các tương tác của người dùng và dễ dàng điều hướng nhờ cấu trúc sạch sẽ."
+    },
+    "heroSection": {
+      "heading1": "Từ ý tưởng đến thực thi – Xây dựng Web xuất sắc",
+      "heading2": "Chỉn chu ở mọi bước",
+      "description": "Dịch vụ phát triển website của Dayone không chỉ là xây dựng một trang web; mà là tạo ra một trải nghiệm kỹ thuật số có thể thúc đẩy mục tiêu kinh doanh của doanh nghiệp. Đội ngũ phát triển của Dayone sẽ làm việc chặt chẽ với khách hàng để tạo ra một website không chỉ thân thiện với người dùng mà còn hiện thực hóa các mục tiêu của doanh nghiệp."
+    },
+    "importanceSection": {
+      "heading": "Tầm quan trọng của một trang web chuyên nghiệp dành cho doanh nghiệp của bạn",
+      "feature1": {
+        "title": "Tăng cường khả năng hiển thị và tiếp cận",
+        "description": "Sẵn sàng phục vụ khách hàng tiềm năng 24/7, hoàn toàn không phụ thuộc vào múi giờ hay giờ giấc làm việc, giúp doanh nghiệp tiếp cận và giữ liên lạc với khách hàng ngoài khu vực địa phương, mở rộng thị trường toàn cầu."
+      },
+      "feature2": {
+        "title": "Uy tín và tính chuyên nghiệp",
+        "description": "Một trang web chuyên nghiệp mang lại sự uy tín cho doanh nghiệp. Nhiều khách hàng tin tưởng vào doanh nghiệp hơn khi họ được tiếp cận một trang web được thiết kế tỉ mỉ, tinh tế. Nó cũng thể hiện bản sắc thương hiệu, giá trị và tầm nhìn của doanh nghiệp, giúp bạn nổi bật so với đối thủ."
+      },
+      "feature3": {
+        "title": "Tiếp thị hiệu quả về chi phí",
+        "description": "Tiếp thị số qua một trang web thiết kế đẹp thường hiệu quả về chi phí hơn các phương pháp truyền thống (ví dụ, quảng cáo in ấn, biển quảng cáo). Hơn nữa, bạn có thể theo dõi hành vi và sở thích của người dùng, giúp bạn điều chỉnh chiến lược tiếp thị và ưu đãi."
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "Điều khiến chúng tôi trở nên khác biệt"
+    },
+    "projectsSection": {
+      "heading": "Những dự án của chúng tôi"
+    },
+    "contactSection": {
+      "collaborateText": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "heading": "Khởi động dự án của bạn ngay hôm nay!",
+      "button": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ đầy nhiệt huyết, luôn tìm kiếm những ý tưởng sáng tạo và khác biệt. Cam kết đồng hành cùng phát triển với các doanh nghiệp thông qua việc cung cấp các giải pháp công nghệ tiên tiến và phù hợp nhất."
+    }
+  },
+  "productStrategy": {
+    "hero": {
+      "heading1": "Biến ý tưởng thành sản phẩm cùng với",
+      "heading2": "Với Tư Duy Thiết Kế Và Trải Nghiệm Liền Mạch",
+      "description": "Dịch vụ Chiến lược & Quản lý Sản phẩm của DayOne được thiết kế để hướng dẫn doanh nghiệp qua từng giai đoạn phát triển sản phẩm, từ ý tưởng đến ra mắt thị trường. Phương pháp tư vấn của chúng tôi tập trung vào việc hiểu rõ mục tiêu kinh doanh của khách hàng và tạo ra một lộ trình phát triển sản phẩm phù hợp với đối tượng khách hàng mục tiêu."
+    },
+    "feature1": {
+      "title": "Tư duy Thiết kế làm Nền tảng",
+      "description": "Quy trình tư vấn của chúng tôi được xây dựng dựa trên tư duy Thiết kế, đảm bảo nhu cầu người dùng luôn là ưu tiên hàng đầu trong mọi quyết định liên quan đến sản phẩm."
+    },
+    "feature2": {
+      "title": "Phương pháp Hướng đến UX",
+      "description": "Chúng tôi chú trọng vào trải nghiệm người dùng, đảm bảo rằng mỗi sản phẩm chúng tôi giúp phát triển đều trực quan, dễ tiếp cận và phù hợp với hành vi người dùng."
+    },
+    "feature3": {
+      "title": "Thiết kế Nhất quán",
+      "description": "Chúng tôi triển khai một hệ thống thiết kế thống nhất, đảm bảo sản phẩm được nhất quán, chất lượng và hiệu quả từ đầu đến cuối."
+    },
+    "whyImportance": {
+      "heading": "Tầm quan trọng của Thiết kế chiến lược và Quản lý Sản phẩm",
+      "section1": {
+        "title": "Làm rõ Tầm nhìn Sản phẩm",
+        "description": "Một chiến lược sản phẩm được thiết kế rõ ràng giúp doanh nghiệp có hướng đi và mục tiêu cụ thể, giảm thiểu rủi ro mắc phải những sai lầm tốn kém trong quá trình phát triển."
+      },
+      "section2": {
+        "title": "Tập trung vào Trải nghiệm Người dùng",
+        "description": "Chúng tôi đảm bảo sản phẩm của bạn mang lại giá trị bằng cách tập trung vào nhu cầu và mong muốn của người dùng, chú trọng tăng sự hài lòng và tương tác."
+      },
+      "section3": {
+        "title": "Tối ưu hóa Quy trình Phát triển",
+        "description": "Với một hệ thống thiết kế và quản lí cụ thế, đội ngũ của bạn có thể làm việc hiệu quả hơn, giảm thiểu việc làm lại và đảm bảo sự nhất quán trong giao diện sản phẩm."
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "Điều khiến chúng tôi trở nên khác biệt"
+    },
+    "projectsSection": {
+      "heading": "Dự án của chúng tôi"
+    },
+    "contactSection": {
+      "title": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "subtitle": "Khởi động dự án của bạn ngay hôm nay!",
+      "buttonText": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ đầy nhiệt huyết, luôn tìm kiếm những ý tưởng sáng tạo và khác biệt. Cam kết đồng hành cùng phát triển với các doanh nghiệp thông qua việc cung cấp các giải pháp công nghệ tiên tiến và phù hợp nhất."
+    }
+  },
+  "digitalTransformation": {
+    "hero": {
+      "heading1": "Nâng Tầm Doanh Nghiệp Với Các Giải Pháp Số",
+      "heading2": "Tạo Lợi Thế Cạnh Tranh",
+      "description": "Dịch vụ Chuyển đổi Số của DayOne giúp doanh nghiệp thích nghi và phát triển trong thời đại số bằng cách hiện đại hóa các hoạt động, quy trình và trải nghiệm khách hàng. Chúng tôi cung cấp các giải pháp tùy chỉnh, bao gồm ứng dụng doanh nghiệp, hệ thống ERP, nền tảng CRM và ứng dụng tùy chỉnh cho doanh nghiệp, được thiết kế để tối ưu hóa quy trình và cải thiện hiệu quả. Dù bạn làm việc trong lĩnh vực thương mại điện tử, logistics, giáo dục hay các ngành khác, dịch vụ của chúng tôi sẽ cung cấp cho doanh nghiệp những công cụ số cần thiết để duy trì sự cạnh tranh trong thị trường hiện nay."
+    },
+    "feature1": {
+      "title": "Giải pháp Tùy Chỉnh",
+      "description": "Chúng tôi không tin vào giải pháp một kích cỡ cho tất cả. DayOne cung cấp ứng dụng doanh nghiệp, hệ thống ERP và CRM tùy chỉnh để giải quyết nhu cầu đặc thù của từng ngành—dù đó là logistics, giáo dục hay thương mại điện tử."
+    },
+    "feature2": {
+      "title": "Phương Pháp Toàn Diện",
+      "description": "Chúng tôi tích hợp nhiều khía cạnh của doanh nghiệp bạn vào một hệ sinh thái số liền mạch, cung cấp các giải pháp toàn diện giúp cải thiện quy trình nội bộ và tương tác với khách hàng."
+    },
+    "feature3": {
+      "title": "Chuyên Môn Cao",
+      "description": "Đội ngũ của chúng tôi có kinh nghiệm sâu rộng trong nhiều ngành, giúp cung cấp các giải pháp số phù hợp với nhu cầu và thử thách đặc thù của thị trường."
+    },
+    "whyInvest": {
+      "heading": "Tại sao nên đầu tư vào Chuyển đổi Số",
+      "section1": {
+        "title": "Tối ưu hóa Quy trình",
+        "description": "Việc triển khai hệ thống ERP và CRM giúp tối ưu hóa các quy trình làm việc, giảm thiểu công việc thủ công và nâng cao hiệu quả hoạt động trong toàn bộ doanh nghiệp."
+      },
+      "section2": {
+        "title": "Cải thiện Trải nghiệm Khách hàng",
+        "description": "Với các công cụ số như ứng dụng doanh nghiệp và giải pháp tùy chỉnh, bạn có thể cung cấp các tương tác cá nhân hóa, liền mạch, nâng cao sự hài lòng của khách hàng."
+      },
+      "section3": {
+        "title": "Duy trì Sự Cạnh Tranh",
+        "description": "Trong các ngành như thương mại điện tử, logistics và giáo dục, việc duy trì sự cập nhật với các xu hướng số là rất quan trọng để giữ vững vị thế trên thị trường và thúc đẩy sự phát triển."
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "Điều khiến chúng tôi trở nên khác biệt"
+    },
+    "projectsSection": {
+      "heading": "Dự án của chúng tôi"
+    },
+    "contactSection": {
+      "title": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "subtitle": "Khởi động dự án của bạn ngay hôm nay!",
+      "buttonText": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ đầy nhiệt huyết, luôn tìm kiếm những ý tưởng sáng tạo và khác biệt. Cam kết đồng hành cùng phát triển với các doanh nghiệp thông qua việc cung cấp các giải pháp công nghệ tiên tiến và phù hợp nhất."
+    }
+  },
+  "cyberSecurity": {
+    "feature1": {
+      "title": "Giải pháp Tùy chỉnh",
+      "description": "Một cuộc tấn công mạng duy nhất có thể gây thiệt hại tài chính nghiêm trọng, bao gồm chi phí phục hồi và gián đoạn công việc."
+    },
+    "feature2": {
+      "title": "Phòng thủ Chủ động",
+      "description": "Hệ thống giám sát 24/7 và phát hiện mối đe dọa của chúng tôi chủ động nhận diện và giảm thiểu các rủi ro trước khi chúng gây hại."
+    },
+    "feature3": {
+      "title": "Đội ngũ Chuyên gia với Công nghệ Tiên tiến",
+      "description": "Với đội ngũ chuyên gia giàu kinh nghiệm và công cụ hiện đại, chúng tôi cung cấp các giải pháp bảo mật mạnh mẽ để bảo vệ doanh nghiệp của bạn từ mọi góc độ."
+    },
+    "heroSection": {
+      "heading1": "Tăng Cường An Ninh Cho Doanh Nghiệp Với",
+      "heading2": "Giải Pháp Bảo Mật Mạng Và Phòng Ngừa Chủ Động",
+      "paragraph": "Chúng tôi cung cấp các giải pháp bảo mật toàn diện bảo vệ tài sản của bạn, duy trì tính toàn vẹn của hệ thống và đảm bảo tuân thủ các yêu cầu pháp lý. Với đội ngũ chuyên gia và công cụ tiên tiến, chúng tôi cung cấp bảo vệ vững chắc và giám sát liên tục để giữ cho doanh nghiệp của bạn an toàn trong môi trường mối đe dọa mạng luôn thay đổi."
+    },
+    "featureSection": {
+      "heading": "Tầm quan trọng của việc có một trang web chuyên nghiệp cho doanh nghiệp của bạn",
+      "feature1": {
+        "title": "Ngăn ngừa Mất mát Tài chính",
+        "description": "Một cuộc tấn công mạng duy nhất có thể gây thiệt hại tài chính nghiêm trọng, bao gồm chi phí phục hồi và gián đoạn công việc."
+      },
+      "feature2": {
+        "title": "Bảo vệ Thông tin Nhạy cảm",
+        "description": "Bảo vệ dữ liệu cá nhân và thông tin quan trọng của khách hàng để duy trì lòng tin và bảo vệ danh tiếng của bạn."
+      },
+      "feature3": {
+        "title": "Đảm bảo Liên tục Kinh doanh",
+        "description": "Các biện pháp bảo mật mạng ngăn ngừa sự gián đoạn hoạt động, đảm bảo hoạt động kinh doanh diễn ra suôn sẻ."
+      }
+    },
+    "projectsSection": {
+      "heading": "Dự án của chúng tôi",
+      "project1": {
+        "projectName": "Skymate",
+        "projectTags": ["Web", "App"],
+        "description": "Mô tả ngắn gọn về dự án.",
+        "technologyTag": ["React", "Node.js", "AWS"]
+      },
+      "project2": {
+        "projectName": "USC Card Stablecoin",
+        "projectTags": ["Blockchain", "Fintech"],
+        "description": "Mô tả ngắn gọn về dự án.",
+        "technologyTag": ["Solidity", "Ethereum"]
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "Điều khiến chúng tôi trở nên khác biệt"
+    },
+    "contactSection": {
+      "title": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "subtitle": "Khởi động dự án của bạn ngay hôm nay!",
+      "buttonText": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ đầy nhiệt huyết, luôn tìm kiếm những ý tưởng sáng tạo và khác biệt. Cam kết đồng hành cùng phát triển với các doanh nghiệp thông qua việc cung cấp các giải pháp công nghệ tiên tiến và phù hợp nhất."
+    }
+  },
+  "cloudComputing": {
+    "heroSection": {
+      "heading1": "Giải Pháp Đám Mây Mở Rộng",
+      "heading2": "Hỗ Trợ Tăng Trưởng Và Tối Ưu Hóa Hiệu Năng",
+      "paragraph": "Dù bạn sử dụng AWS, Google Cloud, Azure hay Digital Ocean, chúng tôi cung cấp giải pháp tùy chỉnh giúp hệ thống của doanh nghiệp mở rộng một cách tự nhiên khi doanh nghiệp của bạn phát triển. Dịch vụ của chúng tôi đảm bảo rằng các ứng dụng của khách hàng luôn được tối ưu hóa về hiệu suất, với các tiện ích bổ sung như hệ thống giám sát liên tục, cảnh báo và bảo trì. Sử dụng các công nghệ tiên tiến như Docker, Kubernetes và Terraform, chúng tôi cung cấp cơ sở hạ tầng đám mây mạnh mẽ phát triển cùng doanh nghiệp của bạn."
+    },
+    "feature1": {
+      "title": "Giải pháp đám mây tùy chỉnh",
+      "description": "Chúng tôi làm việc với các nền tảng đám mây khác nhau để tạo ra giải pháp phù hợp với nhu cầu kinh doanh cụ thể của bạn, dù bạn đang sử dụng AWS, Azure, hay nhà cung cấp khác."
+    },
+    "feature2": {
+      "title": "Quản lý và Giám sát Chủ động",
+      "description": "Hệ thống giám sát và cảnh báo 24/7 của chúng tôi đảm bảo rằng mọi vấn đề đều được phát hiện và giải quyết nhanh chóng, ngăn ngừa gián đoạn công việc."
+    },
+    "feature3": {
+      "title": "Đội Ngũ Chuyên Môn Cao",
+      "description": "Với các chuyên gia giàu kinh nghiệm và công cụ tiên tiến, chúng tôi cung cấp các giải pháp bảo mật mạnh mẽ để bảo vệ doanh nghiệp của bạn từ mọi góc độ."
+    },
+    "featureSection": {
+      "heading": "Tại sao doanh nghiệp bên đầu tư vào điện toán đám mây và mở rộng hệ thống",
+      "feature1": {
+        "title": "Hiệu quả Chi phí",
+        "description": "Chỉ trả tiền cho tài nguyên bạn sử dụng, tránh chi phí không cần thiết trong khi đảm bảo hệ thống của bạn có thể xử lý nhu cầu tăng lên khi cần."
+      },
+      "feature2": {
+        "title": "Tính Linh Hoạt và Mở rộng",
+        "description": "Khi doanh nghiệp của bạn phát triển, cơ sở hạ tầng của bạn sẽ mở rộng một cách dễ dàng, thích ứng với các thử thách mới và lưu lượng truy cập tăng lên mà không làm giảm hiệu suất."
+      },
+      "feature3": {
+        "title": "Độ Tin Cậy Cao",
+        "description": "Các nền tảng đám mây như AWS, Google Cloud và Azure cung cấp tính sẵn sàng cao và sự dự phòng, đảm bảo doanh nghiệp của bạn luôn hoạt động."
+      }
+    },
+    "projectsSection": {
+      "heading": "Dự án của chúng tôi",
+      "project1": {
+        "projectName": "Skymate",
+        "projectTags": ["Web", "App"],
+        "description": "Mô tả ngắn gọn về dự án.",
+        "technologyTag": ["React", "Node.js", "AWS"]
+      },
+      "project2": {
+        "projectName": "USC Card Stablecoin",
+        "projectTags": ["Blockchain", "Fintech"],
+        "description": "Mô tả ngắn gọn về dự án.",
+        "technologyTag": ["Solidity", "Ethereum"]
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "Điều khiến chúng tôi trở nên khác biệt"
+    },
+    "contactSection": {
+      "title": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "subtitle": "Khởi động dự án của bạn ngay hôm nay!",
+      "buttonText": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ đầy nhiệt huyết, luôn tìm kiếm những ý tưởng sáng tạo và khác biệt. Cam kết đồng hành cùng phát triển với các doanh nghiệp thông qua việc cung cấp các giải pháp công nghệ tiên tiến và phù hợp nhất."
+    }
+  },
+  "appDevelopment": {
+    "feature1": {
+      "title": "Tư vấn từ ý tưởng đến thực thi",
+      "description": "Chúng tôi làm việc chặt chẽ với khách hàng từ ý tưởng ban đầu đến khi phát hành trên cửa hàng ứng dụng, đảm bảo tầm nhìn của bạn trở thành hiện thực với sự hướng dẫn của chuyên gia ở mỗi giai đoạn."
+    },
+    "feature2": {
+      "title": "Chú Trọng Đến UI/UX",
+      "description": "Đội ngũ thiết kế của chúng tôi chú trọng vào trải nghiệm người dùng và thiết kế giao diện, đảm bảo ứng dụng vừa vận hành hiệu quả vừa thân thiện với người dùng."
+    },
+    "feature3": {
+      "title": "Tối ưu hóa Hiệu suất",
+      "description": "Chúng tôi ưu tiên hiệu suất, đảm bảo ứng dụng của bạn chạy mượt mà, nhanh chóng và hiệu quả để mang lại trải nghiệm tốt nhất cho người dùng."
+    },
+    "heroSection": {
+      "heading1": "Từ Ý tưởng đến Ra Mắt",
+      "heading2": "Xây dựng ứng dụng vượt trội",
+      "paragraph": "Dịch vụ Phát triển Ứng dụng của DayOne biến ý tưởng của khách hàng thành hiện thực dưới sự hướng dẫn tận tình ở từng giai đoạn phát triển sản phẩm. Chúng tôi cung cấp dịch vụ đầy đủ bao gồm thiết kế, lập trình, tối ưu hóa hiệu suất và hỗ trợ liên tục. Đội ngũ của chúng tôi cam kết tạo ra các ứng dụng chất lượng cao, không chỉ vận hành hiệu quả mà còn thân thiện với người dùng."
+    },
+    "featureSection": {
+      "heading": "Tầm quan trọng khi sở hữu một ứng dụng chất lượng vượt trội",
+      "card1": {
+        "heading": "Nâng cao Trải Nghiệm Khách Hàng",
+        "description": "Một ứng dụng được thiết kế chỉn chu, dễ sử dụng sẽ giúp nâng cao sự gắn kết của người dùng và tạo điều kiện thuận lợi cho khách hàng tương tác với thương hiệu."
+      },
+      "card2": {
+        "heading": "Tăng Cường Nhận Diện Thương Hiệu",
+        "description": "Một ứng dụng chỉn chu có mặt trên các cửa hàng ứng dụng sẽ giúp doanh nghiệp tiếp cận được nhiều người dùng hơn, nâng cao nhận diện thương hiệu và khả năng phát triển kinh doanh."
+      },
+      "card3": {
+        "heading": "Nâng Cao Hiệu Quả Vận Hành",
+        "description": "Ứng dụng tùy chỉnh có thể giúp tối ưu hóa quy trình, tự động hóa các tác vụ và giảm bớt công việc thủ công, giúp đội ngũ của bạn tập trung vào các hoạt động kinh doanh cốt lõi."
+      }
+    },
+    "projectsSection": {
+      "heading": "Dự án của chúng tôi",
+      "project1": {
+        "projectName": "Skymate",
+        "projectTags": ["Web", "App"],
+        "description": "Mô tả ngắn gọn về dự án.",
+        "technologyTag": ["React", "Node.js", "AWS"]
+      },
+      "project2": {
+        "projectName": "USC Card Stablecoin",
+        "projectTags": ["Blockchain", "Fintech"],
+        "description": "Mô tả ngắn gọn về dự án.",
+        "technologyTag": ["Solidity", "Ethereum"]
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "Điều khiến chúng tôi trở nên khác biệt"
+    },
+    "contactSection": {
+      "title": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "subtitle": "Khởi động dự án của bạn ngay hôm nay!",
+      "buttonText": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ đầy nhiệt huyết, luôn tìm kiếm những ý tưởng sáng tạo và khác biệt. Cam kết đồng hành cùng phát triển với các doanh nghiệp thông qua việc cung cấp các giải pháp công nghệ tiên tiến và phù hợp nhất."
+    }
+  },
+  "portfolio": {
+    "ourProducts": "SẢN PHẨM CỦA CHÚNG TÔI",
+    "ultimateExcellence": "Gắn liền với sự xuất sắc vượt trội và tính đổi mới",
+    "companyMission": "Dayone luôn nỗ lực mang đến cho khách hàng những sản phẩm và trải nghiệm có chất lượng tốt nhất. Niềm tin của bạn là sức mạnh để chúng tôi cải tiến mỗi ngày.",
+    "viewProject": "Xem Dự Án"
+  },
+  "newDigitalTransformation": {
+    "masterhead": {
+      "heading1": "Chuyển đổi số",
+      "heading2": "Bước đi đột phá cho doanh nghiệp",
+      "button": "Liên hệ ngay"
+    },
+    "hero": {
+      "heading1": "Chuyển đổi số",
+      "heading2": "Giúp doanh nghiệp tự động hóa quy trình, tận dụng dữ liệu để ra quyết định thông minh và nâng cao trải nghiệm khách hàng."
+    },
+    "feature1": {
+      "title": "Tăng hiệu suất làm việc lên đến 50%",
+      "description": "Chúng tôi giúp doanh nghiệp tự động hóa quy trình làm việc, giảm tải các tác vụ thủ công và tăng tốc độ xử lý công việc. Các công cụ quản lý hiện đại như CRM, ERP không chỉ hỗ trợ đội ngũ của bạn làm việc nhanh hơn mà còn hiệu quả hơn."
+    },
+    "feature2": {
+      "title": "Tối ưu chi phí vận hành và công nghệ",
+      "description": "Chuyển đổi số giúp doanh nghiệp tiết kiệm chi phí dài hạn bằng cách tối ưu hóa các quy trình và tận dụng công nghệ hiện đại. Từ giảm lãng phí tài nguyên đến tiết kiệm chi phí nhân sự, tất cả đều nằm trong tầm tay."
+    },
+    "feature3": {
+      "title": "Cải thiện trải nghiệm khách hàng",
+      "description": "Công nghệ giúp bạn tiếp cận khách hàng nhanh chóng, cá nhân hóa dịch vụ và nâng cao mức độ hài lòng. Chatbot thông minh, gợi ý sản phẩm phù hợp hay hệ thống phản hồi nhanh là những giải pháp tối ưu để giữ chân khách hàng."
+    },
+    "feature4": {
+      "title": "Ra quyết định dựa trên dữ liệu thông minh",
+      "description": "Dựa vào công nghệ phân tích dữ liệu lớn và trí tuệ nhân tạo, chúng tôi giúp doanh nghiệp khai thác tối đa giá trị từ dữ liệu để đưa ra quyết định chiến lược."
+    },
+    "button": "Liên hệ ngay",
+    "serviceSection": {
+      "heading": "Dịch vụ của chúng tôi",
+      "service1": {
+        "title": "Tư vấn chiến lược chuyển đổi số",
+        "description": "Chúng tôi cung cấp giải pháp và lộ trình chuyển đổi số phù hợp, từ đánh giá hiện trạng, đề xuất chiến lược đến tùy chỉnh giải pháp theo ngành nghề và quy mô doanh nghiệp."
+      },
+      "service2": {
+        "title": "Triển khai hệ thống CRM/ERP",
+        "description": "CRM và ERP giúp doanh nghiệp vận hành hiệu quả, từ quản lý khách hàng đến hoạt động nội bộ, với CRM tối ưu trải nghiệm khách hàng, ERP quản lý toàn diện, và tích hợp liền mạch với các công cụ hiện có."
+      },
+      "service3": {
+        "title": "Phân tích dữ liệu và báo cáo thông minh",
+        "description": "Chúng tôi cung cấp công cụ khai thác dữ liệu tối ưu, với báo cáo trực quan, dự đoán thông minh và kết nối đa kênh từ website, CRM, ERP"
+      },
+      "service4": {
+        "title": "Đào tạo và hỗ trợ kỹ thuật sau triển khai",
+        "description": "Chuyển đổi số không chỉ là cài đặt hệ thống, chúng tôi đảm bảo nhân viên sử dụng thành thạo với đào tạo chi tiết, hỗ trợ 24/7 và cải tiến liên tục theo nhu cầu doanh nghiệp."
+      }
+    },
+    "howWeWorkSection": {
+      "heading": "Chúng tôi làm việc như thế nào?",
+      "step1": {
+        "title": "Phân tích nhu cầu và đánh giá hiện trạng",
+        "description": "Chuyển đổi số bắt đầu bằng việc đánh giá quy trình, công nghệ hiện tại và phân tích mục tiêu kinh doanh để xác định và khắc phục các điểm cần cải thiện"
+      },
+      "step2": {
+        "title": "Lên kế hoạch và đề xuất giải pháp",
+        "description": "Chúng tôi thiết kế lộ trình chuyển đổi số phù hợp, với giải pháp đáp ứng nhu cầu, khắc phục điểm yếu và kế hoạch triển khai rõ ràng, chi phí minh bạch"
+      },
+      "step3": {
+        "title": "Triển khai công nghệ",
+        "description": "Đội ngũ chuyên gia cài đặt và tùy chỉnh các hệ thống công nghệ như CRM, ERP, phân tích dữ liệu, đảm bảo phù hợp với quy trình doanh nghiệp và kiểm tra hệ thống trước khi sử dụng"
+      },
+      "step4": {
+        "title": "Hỗ trợ vận hành và đào tạo đội ngũ",
+        "description": "Chúng tôi cung cấp hỗ trợ vận hành liên tục và đào tạo nhân viên, giúp sử dụng công nghệ hiệu quả và đảm bảo hệ thống hoạt động ổn định với đội ngũ hỗ trợ kỹ thuật sẵn sàng xử lý sự cố"
+      }
+    },
+    "ctaSection": {
+      "title": "Bạn đã sẵn sàng chuyển đổi số chưa?",
+      "subtitle": "Liên hệ ngay để nhận tư vấn miễn phí từ chuyên gia của chúng tôi"
+    },
+    "projectsSection": {
+      "heading": "Những dự án của chúng tôi"
+    }
+  },
+  "howWeWork": {
+    "masterhead": {
+      "heading1": "The way we work",
+      "heading2": "Chúng tôi không làm việc cho bạn - Chúng tôi làm việc với bạn",
+      "button": "LIÊN HỆ NGAY"
+    },
+    "hero": {
+      "heading1": "Digital Transformation",
+      "heading2": "Empowering businesses to automate processes, leverage data for smarter decision-making, and enhance customer experiences."
+    },
+    "feature1": {
+      "title": "Boost work efficiency by up to 50%",
+      "description": "We help businesses automate workflows, reduce manual tasks, and accelerate task processing. Modern management tools like CRM and ERP enable your team to work not only faster but also more efficiently."
+    },
+    "feature2": {
+      "title": "Enhance customer experience",
+      "description": "Technology allows businesses to reach customers quickly, personalize services, and increase satisfaction levels. Smart chatbots, tailored product recommendations, and fast-response systems are optimal solutions to retain customers."
+    },
+    "feature3": {
+      "title": "Optimize operational and technological costs",
+      "description": "Digital transformation helps businesses save on long-term costs by optimizing processes and leveraging modern technology. From minimizing resource waste to reducing staffing expenses, it’s all within reach."
+    },
+    "feature4": {
+      "title": "Make data-driven smart decisions",
+      "description": "By leveraging big data analytics and artificial intelligence, we help businesses maximize the value of their data to make strategic decisions."
+    },
+    "button": "Liên hệ ngay",
+    "serviceSection": {
+      "heading": "Một đội ngũ không phải chỉ biết nhận nhiệm vụ",
+      "service1": {
+        "title": "Nói không với \"Agile giả\"",
+        "description": "Dayone vận dụng mô hình Agile nhằm đem đến cho khách hàng sự cân bằng giữa linh hoạt giải quyết vấn đề và chuẩn xác. Chúng tôi thiết lập lộ trình và chiến lược cụ thể để giải quyết lỗi một cách hiệu quả nhưng vẫn đảm bảo chất lượng hoặc thời hạn hoàn thành."
+      },
+      "service2": {
+        "title": "Không có BA, phân tích cùng nhau",
+        "description": "Tại Dayone, chúng tôi không chỉ đơn thuần thực hiện các nhiệm vụ được giao bởi Business Analyst. Mỗi thành viên trong đội ngũ kĩ sư đều sở hữu tư duy xây dựng sản phẩm và đóng góp ý kiến mang tính xây dựng cho sự hoàn hảo của công việc."
+      },
+      "service3": {
+        "title": "Coi trọng sự giao tiếp",
+        "description": "Đội ngũ của chúng tôi luôn sẵn sàng trao đổi với khách hàng cũng như thảo luận nội bộ với đồng nghiệp, đảm bảo hợp tác mượt mà, đồng thời thúc đẩy văn hóa gắn kết và tinh thần trách nhiệm trong từng dự án."
+      }
+    },
+    "contactSection": {
+      "collaborateText": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "heading": "Bạn có dự án?",
+      "button": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ sáng tạo, say mê với các ý tưởng độc đáo và sẵn sàng giúp các doanh nghiệp tạo dựng được bản sắc riêng biệt bằng cách cung cấp các giải pháp công nghệ hàng đầu."
+    },
+    "workingProcessSection": {
+      "heading": "Quy trình làm việc rõ ràng và hiệu quả",
+      "subheading": "Tại Dayone, giao tiếp chính là cốt lõi của mọi thứ.",
+      "step1": {
+        "title": "Thấu hiểu khách hàng",
+        "description": "Chúng tôi tin rằng kết quả xuất sắc đến từ việc thực sự hiểu rõ khách hàng của mình. Thông qua việc thấu hiểu những thách thức của khách hàng, hiểu về ngành nghề, mô hình kinh doanh và mục tiêu của doanh nghiệp, chúng tôi xây dựng nên các giải pháp thật sự phù hợp, hiệu quả đồng thời mang tính đột phá."
+      },
+      "step2": {
+        "title": "Cởi mở trong giao tiếp",
+        "description": "Tại Dayone, chúng tôi trân trọng những cuộc thảo luận cởi mở giữa các Lãnh đạo Công nghệ, Người Quản lý Sản phẩm và bên khách hàng. Những cập nhật định kỳ thông qua báo cáo, các buổi họp và chạy thử sản phẩm đảm bảo sự rõ ràng, thống nhất thông tin giữa các bên và thúc đẩy tiến độ."
+      },
+      "step3": {
+        "title": "Đón nhận phản hồi",
+        "description": "Phản hồi của khách hàng là một trong những yếu tố quan trọng đảm bảo sự thành công của dự án. Dayone luôn chủ động lắng nghe ý kiến đối tác trong mọi giai đoạn, đảm bảo tầm nhìn của doanh nghiệp làm nền tảng cho toàn bộ quy trình. Bằng cách lấy phản hồi làm trung tâm, chúng tôi tạo ra những giải pháp thực sự mang tính hợp tác."
+      },
+      "step4": {
+        "title": "Phương pháp Tư duy Thiết kế",
+        "description": "Chúng tôi giải quyết các thách thức phức tạp nhờ vận dụng phương pháp Tư duy Thiết kế, tập trung vào sự đồng cảm, sáng tạo, thử nghiệm mẫu và kiểm tra. Quy trình lấy người dùng làm trọng tâm này giúp chúng tôi phát hiện cơ hội, giải quyết các điểm đau đầu và mang lại những giải pháp trực quan, hiệu quả, phù hợp với nhu cầu của bạn, đảm bảo thành công bền vững."
+      }
+    },
+    "projectsSection": {
+      "heading": "Những dự án của chúng tôi"
+    },
+    "teamSection": {
+      "collaborateText": "HỢP TÁC CÙNG CHÚNG TÔI",
+      "heading": "Hiểu thêm về đội ngũ chúng tôi",
+      "button": "Liên hệ ngay",
+      "description": "Chúng tôi là một đội ngũ sáng tạo, say mê với các ý tưởng độc đáo và sẵn sàng giúp các doanh nghiệp tạo dựng được bản sắc riêng biệt bằng cách cung cấp các giải pháp công nghệ hàng đầu."
+    },
+    "guaranteeSection": {
+      "heading": "Đảm bảo thành công",
+      "step1": {
+        "title": "Thấu hiểu mong đợi của khách hàng",
+        "description": "Tại Dayone, chúng tôi dành thời gian lắng nghe, đảm bảo hiểu rõ nhu cầu và mục tiêu của khách hàng ở mọi giai đoạn. Bằng cách đó chúng tôi mang lại những giải pháp phù hợp cho từng dự án."
+      },
+      "step2": {
+        "title": "Tùy chỉnh Giải Pháp theo nhu cầu",
+        "description": "Chúng tôi tùy chỉnh công nghệ tiên tiến để đáp ứng nhu cầu đặc thù của dự án, đảm bảo mọi giải pháp sát sao với mục tiêu của doanh nghiệp."
+      },
+      "step3": {
+        "title": "Sản phẩm theo sát Thị trường",
+        "description": "Đảm bảo sản phẩm theo sát tầm nhìn doanh nghiệp mà vẫn ứng dụng tốt cho nhu cầu thị trường, bằng cách phát huy ý tưởng chiến lược và chuyên môn trong từng lĩnh vực."
+      },
+      "step4": {
+        "title": "Hợp tác để mang lại Lợi nhuận tối đa",
+        "description": "Chúng tôi châm ngôn cùng làm việc chung với khách hàng, chứ không chỉ làm cho họ. Chúng tôi đồng hành, tư vấn, và hướng dẫn khách hàng liên tục qua từng giai đoạn và đảm bảo ý kiến của họ được đóng góp vào sản phẩm."
+      },
+      "step5": {
+        "title": "Đúng thời hạn & Đúng ngân sách",
+        "description": "Chúng tôi cam kết bàn giao sản phẩn đúng hạn, bằng cách theo sát kế hoạch và linh hoạt trong vận hành."
+      }
+    }
+  }
+}

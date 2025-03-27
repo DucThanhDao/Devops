@@ -1,0 +1,54 @@
+// Core variables and mixins
+@import 'variables';
+@import 'mixins';
+// Global CSS
+@import 'global';
+@import 'text';
+// Components
+@import 'body';
+@import 'nav';
+@import 'services';
+@import 'masthead';
+@import 'clients';
+@import 'portfolio';
+@import 'technology';
+@import 'feedback';
+@import 'timeline';
+@import 'team';
+@import 'contact';
+@import 'footer';
+@import 'index-page';
+@import 'portfolio-page';
+@import 'filter';
+@import 'dropdown';
+@import 'about-us';
+@import 'portfolio-detail-page';
+@import 'blog-home-page';
+@import 'blog-page';
+@import 'career-page';
+@import 'career-detail-page';
+@import 'modal-cv';
+@import 'not-found-page';
+@import 'cta';
+@import 'languageSwitch';
+@import 'backButton';
+@import 'how-we-work';
+@import 'what-you-looking-for';
+@import 'data';
+@import 'industries';
+@import 'WorksCarousel';
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  --bs-body-color: #000;
+  --bs-heading-color: #000;
+}

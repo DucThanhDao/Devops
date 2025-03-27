@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  new-website-d1:
+    image: ${IMAGE_REF}
+    container_name: new-website-d1
+    ports:
+      - '7778:7778'
+    restart: unless-stopped
