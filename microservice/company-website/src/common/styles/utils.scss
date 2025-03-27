@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Pacifico';
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local('Pacifico Regular'),
+    local('Pacifico-Regular'),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+  font-display: swap;
+}
+
+.badge-outline {
+  color: #22c4fa;
+  border: 1px solid #22c4fa;
+  background-color: transparent;
+  border-radius: 8px;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.pl-4,
+.px-4 {
+  padding-left: 1.5rem !important;
+}
+
+.pr-3,
+.px-3 {
+  padding-right: 1rem !important;
+}
+
+.align-items-center {
+  -webkit-align-items: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+
+.no-hover {
+  cursor: default;
+  color: #0087eb;
+}
+
+.no-hover:hover {
+  color: #0087eb;
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1228px !important;
+  }
+}
+
+.flex {
+  display: flex;
+}
+@media (max-width: 767px) {
+  .d-xs-none {
+    display: none !important;
+  }
+}
+@media (min-width: 600px) {
+  .image-clients {
+    width: 100%;
+    height: auto;
+  }
+}

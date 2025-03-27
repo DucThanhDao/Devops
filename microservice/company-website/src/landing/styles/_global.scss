@@ -1,0 +1,148 @@
+// Global styling for this template
+body {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn:hover {
+  background-color: #e9ecef;
+  box-shadow:
+    0 3px 5px -1px rgba(0, 0, 0, 0.09),
+    0 2px 3px -1px rgba(0, 0, 0, 0.07);
+  transform: scale(1.02);
+}
+
+::selection {
+  background: $primary !important;
+  color: #ffffff !important;
+}
+
+.text-info::selection {
+  background: $primary !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.text-black {
+  color: $black;
+}
+
+.bg-gradient-info {
+  background-image: linear-gradient(310deg, #21d4fd 0%, #2152ff 100%);
+}
+
+a {
+  color: $primary;
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(3rem, 2.472rem + 2.254vw, 4.5rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: clamp(2.5rem, 1.972rem + 2.254vw, 4rem);
+}
+
+h3 {
+  font-size: clamp(2.3rem, 2.007rem + 1.103vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(2rem, 1.8rem + 1vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1.75rem, 1.6rem + 0.8vw, 2rem);
+}
+
+h6 {
+  font-size: clamp(1.5rem, 1.4rem + 0.6vw, 1.75rem);
+}
+
+p,
+a {
+  font-size: clamp(1rem, 0.948rem + 0.197vw, 1.125rem);
+}
+
+button {
+  font-size: clamp(0.875rem, 0.787rem + 0.376vw, 1.125rem);
+}
+
+section {
+  .section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
+  }
+
+  .section-subheading {
+    // font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 75px;
+    text-transform: none;
+    //color: #003866;
+  }
+}
+
+// Button Styles
+.btn {
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: darken($primary, 7.5%) !important;
+    border-color: darken($primary, 7.5%) !important;
+    color: white;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  }
+}
+
+// Highlight color customization
+::-moz-selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+::selection {
+  background: $primary;
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+
+img::-moz-selection {
+  background: transparent;
+}

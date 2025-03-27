@@ -1,0 +1,70 @@
+# Development and IDE files
+.git
+.gitignore
+.idea
+.vscode
+.eslintrc*
+.prettier*
+.editorconfig
+*.swp
+*.swo
+*.swn
+**/tsconfig.tsbuildinfo
+
+# Docker files
+Dockerfile*
+docker-compose*
+.docker
+.dockerignore
+
+# Node.js
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn
+.pnp.*
+
+# Next.js
+out
+.cache
+build
+dist
+coverage
+
+# Environment and secrets
+.env*
+!.env.example
+.aws
+.ssh
+
+# Test files
+**/__tests__
+**/*.test.*
+**/*.spec.*
+jest.config.*
+coverage
+.nyc_output
+cypress
+
+# Documentation and misc
+README.md
+CHANGELOG.md
+LICENSE
+**/*.md
+docs
+.github
+.gitlab
+.husky
+
+# Temp files and logs
+*.log
+.DS_Store
+Thumbs.db
+*.tmp
+*.temp
+temp
+tmp
+
+

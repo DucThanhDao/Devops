@@ -1,0 +1,150 @@
+.what-you-looking-for {
+  background: linear-gradient(174deg, rgb(0 120 209), rgb(29 46 98));
+  .number {
+    color: #05589d;
+  }
+  .heading {
+    color: #ffffff;
+  }
+  .title {
+    color: #fde287;
+    font-size: 1.6rem;
+    line-height: 2.25rem;
+  }
+  .description {
+    font-size: 20px;
+    margin-top: 0.5rem;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .icon {
+    height: fit-content;
+    width: 100px;
+  }
+
+  .title-icon {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .right-card-image {
+    background-image: url('../../../public/assets/img/landing/card-right-2.webp');
+    background-size: auto 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
+
+  .left-card-image {
+    background-image: url('../../../public/assets/img/landing/card-left-2.webp');
+    background-size: auto 100%;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+  }
+  .new-button {
+    border-color: white;
+    background-color: white;
+    color: #0062ab;
+    z-index: 2;
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: darken(white, 7.5%) !important;
+      border-color: darken(white, 7.5%) !important;
+      color: #0062ab;
+      cursor: pointer;
+    }
+
+    &:active,
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+    }
+  }
+
+  .what-you-looking-for-image {
+    width: 90%;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    img {
+      width: 80%;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .what-you-looking-for {
+    .icon {
+      height: 65px;
+      width: 65px;
+    }
+    .heading {
+      line-height: 2.2rem;
+    }
+    .title {
+      font-size: 1.2rem;
+    }
+    .title-icon {
+      height: 70px;
+      width: 70px;
+      top: 0%;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .what-you-looking-for {
+    .step {
+      flex-direction: column !important;
+      gap: 1rem;
+      align-items: center;
+    }
+    .icon {
+      height: 65px;
+      width: 65px;
+    }
+    .heading {
+      color: #ffffff;
+    }
+    .description {
+      text-align: center;
+      margin-top: 0rem;
+    }
+    .what-you-looking-for-image {
+      text-align: center;
+      margin-bottom: 2rem;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .what-you-looking-for {
+    .step {
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+    }
+    .icon {
+      height: 65px;
+      width: 65px;
+    }
+    .what-you-looking-for-image {
+      img {
+        width: 100%;
+      }
+    }
+    .description {
+      font-size: 18px;
+    }
+  }
+}

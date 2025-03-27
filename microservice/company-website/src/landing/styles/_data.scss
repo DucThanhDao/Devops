@@ -1,0 +1,42 @@
+.data {
+  .data-number {
+    line-height: 4rem;
+    font-size: 4rem;
+    // background: linear-gradient(174deg, rgb(1, 86, 152), rgb(29, 46, 98));
+    background-color: #000;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .data-plus {
+    line-height: 4rem;
+    font-size: 4rem;
+    font-weight: 850;
+    // background: linear-gradient(174deg, rgb(1, 86, 152), rgb(29, 46, 98));
+    background-color: #000;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .data-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .data {
+    .data-number {
+      line-height: 2rem;
+      font-size: 2rem;
+    }
+
+    .data-plus {
+      line-height: 2rem;
+      font-size: 2rem;
+      font-weight: 850;
+    }
+    .data-title {
+      font-size: 1rem;
+    }
+  }
+}

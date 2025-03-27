@@ -1,0 +1,17 @@
+.technologies {
+  border-radius: 20px;
+  li {
+    flex: 0 0 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+}
+
+@media (max-width: 960px) {
+  .technologies {
+    li {
+      flex: 0 0 53%;
+    }
+  }
+}

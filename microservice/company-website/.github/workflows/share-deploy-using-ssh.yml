@@ -1,0 +1,43 @@
+name: "[shared-workflow] Deploy Using SSH"
+on:
+  workflow_call:
+    inputs:
+      image_package:
+        type: string
+        required: true
+      branch_name:
+        type: string
+        required: true
+    secrets:
+      docker_registry_token:
+        required: true
+      docker_registry_username:
+        required: true
+      ssh_host:
+        required: true
+      ssh_private_key:
+        required: true
+      ssh_username:
+        required: true
+env:
+  IMAGE_NAME: ${{ github.repository }}
+jobs:
+  deploy-ssh:
+    name: Deploy using SSH
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch_name }}
+
+      - name: Deploy using SSH
+        uses: ./.github/actions/deployment/ssh
+        with:
+          image_package: ${{ inputs.image_package }}
+          docker_registry_token: ${{ secrets.docker_registry_token }}
+          docker_registry_username: ${{ secrets.docker_registry_username }}
+          ssh_host: ${{ secrets.ssh_host }}
+          ssh_private_key: ${{ secrets.ssh_private_key }}
+          ssh_username: ${{ secrets.ssh_username }}
+    

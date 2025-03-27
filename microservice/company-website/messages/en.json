@@ -1,0 +1,865 @@
+{
+  "home": {
+    "title": "Home Page"
+  },
+  "metadata": {
+    "title": "Dayone - We build scalable modern web and mobile apps",
+    "description": "DayOne Teams is a professional software development & technology consultancy that helps you at all stages of product development...",
+    "url": "https://dayoneteams.com/en",
+    "image": "https://dayoneteams.com/assets/img/og-image.png",
+    "digitalImage": "https://dayoneteams.com/assets/img/digital-transformation/preview-en-2.png"
+  },
+  "data": {
+    "badge": "Get Things Done",
+    "heading": "Built and Delivered",
+    "description": "Years of Expertise in Building Cutting-Edge Tech Products",
+    "top1": "Built up",
+    "bottom1": "Web & Mobile Apps",
+    "top2": "With",
+    "bottom2": "Clients",
+    "top3": "Come from",
+    "bottom3": "Countries"
+  },
+  "whyIsDayOne": {
+    "title": "WHY IS DAYONE?",
+    "subTitle": "Mission-oriented Squad Team",
+    "content": "Our team is a true mission-oriented squad, defined by collaboration, passion, and excellence. Each member brings unique strengths, and together we create an environment where innovation thrives. Passion drives us to overcome challenges, while our commitment to excellence ensures every goal is met with outstanding results. We move as one, focused and impact-driven.",
+    "teamwork": "Collaboration",
+    "excellence": "Excellence",
+    "passion": "Passion",
+    "explore": "See how we work"
+  },
+  "whatYouLookingFor": {
+    "step1": {
+      "title": "Exceptional Problem-Solving",
+      "description": "We action quickly resolving challenges with efficient and practical solutions.",
+      "percent": "60%",
+      "backTitle": "customers choose us because of this trait",
+      "backDescription": "Our customers are assured of innovative solutions, quick problem-solving, and high-quality results."
+    },
+    "step2": {
+      "title": "Great Communication",
+      "description": "Open, transparent communication ensures everyone is on the same page and smooth execution.",
+      "percent": "80%",
+      "backTitle": "We retain our clients with this attribute",
+      "backDescription": "Our clients always feel like an integral part of contributing to the team's success when communicating with us."
+    },
+    "step3": {
+      "title": "Strong Sense of Ownership",
+      "description": "We take full responsibility for our work, treating every project as our own.",
+      "percent": "100%",
+      "backTitle": "absolutely delight our clients with this",
+      "backDescription": "Our clients love how we show responsibility, commitment, and build trust through ownership of our tasks."
+    },
+    "step4": {
+      "title": "Solid Product Mindset",
+      "description": "We innovate with a strong product mindset, prioritizing user needs and business impact.",
+      "percent": "90%",
+      "backTitle": "The rate of clients progressing with us",
+      "backDescription": "We don’t just work for you, we work with you, that is how we drive success and achieve big rewards together."
+    },
+    "heading": "Our Team",
+    "heading2": "Is Your Competitive Advantage",
+    "subHeading": "We tackle your most complex technology challenges and deliver effective solutions.",
+    "button": "Let’s talk"
+  },
+  "navbar": {
+    "services": "Services",
+    "industries": "Industries",
+    "ourWorks": "OUR WORKS",
+    "career": "Career",
+    "aboutUs": "About Us",
+    "button": "LET'S TALK"
+  },
+  "masterhead": {
+    "heading1": "Build Excellent Application",
+    "heading2": "with Great Engineering Team",
+    "description": "Dayone is a tech creative agency that builds world-class software with User-Centric Development Process, a Team with Strong Technical Expertise and Exceptional Communication. We help your business scale efficiently and stay ahead of the competition in a rapidly evolving market.",
+    "button": "Let's Discuss Your Product"
+  },
+  "services": {
+    "badge": "Our Services",
+    "heading": "From Vision to Execution",
+    "description": "Explore the technology solutions that drive your success. Our services are designed to empower your business with cutting-edge solutions, ensuring you stay ahead in a dynamic digital landscape.",
+    "button": "Explore our work",
+    "design": {
+      "heading": "UI/UX Design",
+      "description1": "Design System First",
+      "description2": "User-Centric UI/UX",
+      "link": "Learn more"
+    },
+    "productStrategy": {
+      "heading": "Product Strategy & Management",
+      "description1": "Result-Driven Planning & Execution",
+      "description2": "Early Delivery & Quick Iteration"
+    },
+    "webMobileApp": {
+      "heading": "Web & Mobile App Development",
+      "description1": "Reliable",
+      "description2": "High Performance",
+      "description3": "User friendly",
+      "description4": "SEO & ASO Compliance",
+      "link": "Check it out"
+    },
+    "engineeringTeam": {
+      "heading": "Dedicated Engineering Team",
+      "description1": "Fullstack, Mobile app and Backend",
+      "description2": "DevOps & Site Reliability",
+      "description3": "Business Intelligence",
+      "description4": "Big Data & AI",
+      "link": "Meet our Team"
+    }
+  },
+  "contactSection": {
+    "title": "CONTACT US",
+    "description": "Any questions or remarks? Just write us a message!",
+    "buttonText": "LET'S TALK"
+  },
+  "contactForm": {
+    "contactSection": {
+      "title": "CONTACT US",
+      "description": "Let's Discuss How We Can Elevate Your Product to Greatness!",
+      "buttonText": "LET'S TALK"
+    },
+    "formFields": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Phone Number (optional)",
+      "content": "How Can We Help You?"
+    },
+    "placeHolders": {
+      "name": "Enter your name",
+      "email": "Enter your email",
+      "phone": "Enter your phone number",
+      "content": "Tell us about your idea or project"
+    },
+    "errorMessages": {
+      "name": "Please enter your name",
+      "email": "Please enter your email",
+      "phone": "Please enter a valid phone number",
+      "content": "Please tell us about your idea"
+    },
+    "submitButton": {
+      "default": "Submit",
+      "loading": "Loading..."
+    },
+    "contactInformation": {
+      "heading": "Contact Information",
+      "subheading": "Connect Today for a Quick Response and Start Building Success Together",
+      "address": "Tan Binh District, Ho Chi Minh City, Viet Nam"
+    }
+  },
+  "workCarousel": {
+    "badge": "Our Works",
+    "heading": "Featured Projects We Delivered",
+    "link": "View all",
+    "viewProject": "View Project"
+  },
+  "technologies": {
+    "heading": "TECHNOLOGIES",
+    "description": "We prioritize our clients' long-term success by leveraging the same advanced technology stack as top-tier innovators like Facebook, Netflix, Airbnb, Uber, Stripe, and Shopify."
+  },
+  "testimonials": {
+    "heading": "Testimonials",
+    "description": "We build partnerships that last for years, thanks to the exceptional work we deliver. Most of our clients become long-term collaborators, fostering strong friendships and highly engaged relationships"
+  },
+  "industries": {
+    "artificialIntelligent": "Artificial Intelligent",
+    "blockchain": "Blockchain",
+    "hospitality": "Hospitality",
+    "productivity": "Productivity",
+    "education": "Education",
+    "healthcare": "Healthcare",
+    "foodBeverage": "Food & Beverage",
+    "realEstate": "Real Estate",
+    "travel": "Travel",
+    "communicationServices": "Communication services",
+    "consumerServices": "Consumer services"
+  },
+  "footer": {
+    "dayOne": "It's always DayOne!",
+    "home": "Home",
+    "technology": "Technology",
+    "career": "Career",
+    "letTalk": "Let's Talk",
+    "company": "Company",
+    "Connect": "Connect",
+    "testimonials": "Testimonials",
+    "ourworks": "Our works",
+    "howWeWork": "How we work",
+    "clients": "Our Clients",
+    "contact": "Contact Us",
+    "aboutUs": "About Us",
+    "copyrightLeft": "Copyright © ",
+    "copyrightRight": ". All rights reserved. Dayone Software Technology Ltd.",
+    "cookieMessage": "We use cookies to enable website functionality and understand the performance of our site.",
+    "understand": "I understand",
+    "address": "Location",
+    "addressDetail": "133 Tran Thi Trong street, Ward 15, Tan Binh district, Ho Chi Minh City, Viet Nam",
+    "social": "Social",
+    "industries": "Industries",
+    "ourServices": "Services",
+    "webDevelopment": "Web Development",
+    "appDevelopment": "App Development",
+    "digitalTransformation": "Digital Transformation",
+    "cyberSecurity": "Cyber Security",
+    "cloudComputing": "Cloud Computing",
+    "productStrategy": "Product Strategy",
+    "artificialIntelligent": "Artificial Intelligent",
+    "blockchain": "Blockchain",
+    "hospitality": "Hospitality",
+    "productivity": "Productivity",
+    "education": "Education",
+    "healthcare": "Healthcare",
+    "foodBeverage": "Food & Beverage",
+    "realEstate": "Real Estate",
+    "travel": "Travel",
+    "communicationServices": "Communication services",
+    "consumerServices": "Consumer services"
+  },
+  "pageNotFound": {
+    "notFoundTitle": "404",
+    "notFoundSubTitle": "Page not found",
+    "returnHome": "Return Home Page"
+  },
+  "aboutUsSlug": {
+    "leadership": "Leadership",
+    "developmentTeam": "Development Team",
+    "about": "About",
+    "backButton": "Back"
+  },
+  "aboutUs": {
+    "leadership": "Meet our leader",
+    "leadershipDescription": "Our executive leadership team averages 10 years of experience with Software Development.",
+    "ourDevelopmentTeam": "Our Development Team",
+    "readBio": "Read bio"
+  },
+  "jobDetail": {
+    "applyNow": "Apply Now",
+    "applyDescription": "Send your CV to the HR department"
+  },
+  "careerPage": {
+    "joinTeams": "Join DayoneTeams",
+    "unleashProgress": "Unleash Ongoing Progress",
+    "journeyDescription": "At DayoneTeams, our journey is a perpetual quest to manifest our visions and make our aspirations a reality. If you're ready to be a part of this exciting endeavor...",
+    "goToJobs": "Go To Jobs",
+    "whyJoin": "Why Join Us",
+    "offerMore": "We offer more than a job",
+    "supportCommunity": ", we provide a supportive community for your professional and personal development. Join us for your journey to success.",
+    "challengingProjects": "Challenging Projects",
+    "creditCard": "credit-card",
+    "unlockPotential": "Unlock Your Potential On Challenging Projects With Dayone Team.",
+    "workWithSmartPeople": "Work With Smart People",
+    "collaborateBrilliantMinds": "Collaborate With Brilliant Minds, Elevate Your Career.",
+    "careerAdvancement": "Career Advancement",
+    "fuelAscent": "Fuel Your Ascent with Dayone Technology: Where Career Advancement Knows No Limits.",
+    "noJobOpening": "No Job Opening",
+    "keepInTouch": "Keep in touch",
+    "topJobsOpening": "Top Jobs Opening",
+    "basket": "basket",
+    "spaceship": "spaceship",
+    "connectSocialMedia": "Connect with us on social media platforms to join the conversation, participate in discussions, and be the first to hear about job openings when they become available."
+  },
+  "dropdown": {
+    "industries": "Industries",
+    "ourServices": "Services",
+    "webDevelopment": "Web Development",
+    "appDevelopment": "App Development",
+    "digitalTransformation": "Digital Transformation",
+    "cyberSecurity": "Cyber Security",
+    "cloudComputing": "Cloud Computing",
+    "productStrategy": "Product Strategy",
+    "artificialIntelligent": "Artificial Intelligent",
+    "blockchain": "Blockchain",
+    "hospitality": "Hospitality",
+    "productivity": "Productivity",
+    "education": "Education",
+    "healthcare": "Healthcare",
+    "foodBeverage": "Food & Beverage",
+    "realEstate": "Real Estate",
+    "travel": "Travel",
+    "communicationServices": "Communication services",
+    "consumerServices": "Consumer services"
+  },
+  "filter": {
+    "All": "All",
+    "Artificial Intelligent": "Artificial Intelligent",
+    "Blockchain": "Blockchain",
+    "Hospitality": "Hospitality",
+    "Education": "Education",
+    "Healthcare": "Healthcare",
+    "Food & Beverage": "Food & Beverage",
+    "Digital Marketing": "Digital Marketing",
+    "Real Estate": "Real Estate",
+    "Communication services": "Communication services",
+    "Consumer services": "Consumer services",
+    "Travel": "Travel",
+    "Productivity": "Productivity"
+  },
+  "client": {
+    "heading1": "We work closely",
+    "heading2": "As partners",
+    "description1": "We truly integrate with our clients, ensuring alignment, transparency, and long-term impact.",
+    "description2": "Our commitment goes beyond the launch — we stay engaged, helping done refine, scale, and continuously improve.",
+    "exploreOurWork": "Explore our work"
+  },
+  "jobItem": {
+    "jobDetail": "Job Detail"
+  },
+  "jobOpening": {
+    "topJobsOpening": "Top Jobs Opening"
+  },
+  "modalCV": {
+    "applyForThisJob": "Apply for this job",
+    "applyYourCV": "Apply Your CV",
+    "name": "Name",
+    "emailAddress": "Email address",
+    "phone": "Phone",
+    "chooseYourCVFile": "* Choose your CV file",
+    "applyNow": "Apply now"
+  },
+  "portfolioDetailPage": {
+    "allProjects": "Back",
+    "letsCollaborate": "LET'S COLLABORATE",
+    "gotAProject": "Got a project?",
+    "letsTalk": "Let's talk",
+    "teamDescription": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+  },
+  "webDevelopment": {
+    "feature1": {
+      "title": "Modern web development",
+      "description": "Secure, scalable and intuitive web applications with latest technologies deployed on proven scalable platforms."
+    },
+    "feature2": {
+      "title": "Goals alignment",
+      "description": "We are sure to grasp your organization's goals during the collaboration and would customize the website to your own interest that can deliver greatest business value."
+    },
+    "feature3": {
+      "title": "High performance",
+      "description": "Website is built with fast loading time, prompt response to user interactions and is easy to navigate due to clean structure."
+    },
+    "heroSection": {
+      "heading1": "From Concept to Launch – Exceptional Web",
+      "heading2": "Development at Every Step",
+      "description": "Dayone's website development service is more than just building a website; it's about crafting a digital experience that can drive your business goals. Our team of skilled developers and designers will work closely with you to create a website that is not only visually stunning but also user-friendly and effective at engaging with your audience."
+    },
+    "importanceSection": {
+      "heading": "The importance of having a professional website for your own business",
+      "feature1": {
+        "title": "Increased Visibility and Accessibility",
+        "description": "Your business is available to potential customers around the clock, regardless of time zones or business hours, allowing you to reach and keep contact with customers beyond your local area, expanding your market globally."
+      },
+      "feature2": {
+        "title": "Credibility and Professionalism",
+        "description": "A professional website gives your business legitimacy and credibility. Many customers trust businesses more when they have a well-designed website. It also showcases your brand identity, values, and vision, helping you stand out from competitors."
+      },
+      "feature3": {
+        "title": "Cost-Effective Marketing",
+        "description": "Digital marketing through a well-designed website is often more cost-effective than traditional methods (e.g., print ads, billboards). Moreover, you can track user behavior and preferences, allowing you to tailor your marketing strategies and offers."
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "What makes we different"
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do"
+    },
+    "contactSection": {
+      "collaborateText": "LET'S COLLABORATE",
+      "heading": "Start a journey with us!",
+      "button": "Let's talk",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    }
+  },
+  "productStrategy": {
+    "hero": {
+      "heading1": "Turning Ideas into Market-Ready Products with",
+      "heading2": "Design Thinking and Seamless UX",
+      "description": "DayOne’s Product Strategy & Management service is designed to guide businesses through every stage of product development, from ideation to market launch. Our consulting-oriented approach focuses on understanding your business goals and creating a roadmap for delivering products that resonate with your target audience."
+    },
+    "feature1": {
+      "title": "Design Thinking at the Core",
+      "description": "Our consulting process is built around design thinking, ensuring that user needs are at the forefront of every product decision."
+    },
+    "feature2": {
+      "title": "UX-oriented Approach",
+      "description": "We focus heavily on user experience, ensuring that each product we help develop is intuitive, accessible, and aligned with user behaviors."
+    },
+    "feature3": {
+      "title": "Consistent Design System",
+      "description": "We implement a unified design system, ensuring that your product maintains consistency, quality, and efficiency from start to finish."
+    },
+    "whyImportance": {
+      "heading": "The importance of Product Strategy and Management",
+      "section1": {
+        "title": "Clarify Product Vision",
+        "description": "A well-defined product strategy ensures you have a clear direction and goals, reducing the risk of costly missteps during development"
+      },
+      "section2": {
+        "title": "Focus on User Experience",
+        "description": "Our UX-oriented approach ensures your product delivers value by focusing on what users need and want, increasing satisfaction and engagement."
+      },
+      "section3": {
+        "title": "Streamline Development",
+        "description": "With a design system in place, your team can work more efficiently, reducing rework and ensuring a consistent look and feel across the product."
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "What makes we different"
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do"
+    },
+    "contactSection": {
+      "title": "LET'S COLLABORATE",
+      "subtitle": "Start a journey with us!",
+      "buttonText": "Let's talk",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    }
+  },
+  "digitalTransformation": {
+    "hero": {
+      "heading1": "Transform Your Business with Tailored Digital",
+      "heading2": "Solutions for a Competitive Edge",
+      "description": "DayOne’s Digital Transformation service helps businesses adapt and thrive in the digital age by modernizing their operations, processes, and customer experiences. We offer tailored solutions, including business apps, ERP systems, CRM platforms, and corporate custom apps, designed to streamline your operations and improve efficiency. Whether you're in e-commerce, logistics, education, or other industries, our service equips your business with the digital tools necessary to stay competitive in today’s fast-paced market."
+    },
+    "feature1": {
+      "title": "Tailored Solutions",
+      "description": "We don’t believe in one-size-fits-all. DayOne offers customized business apps, ERP, and CRM systems to address the specific needs of your industry—whether it's logistics, education, or e-commerce."
+    },
+    "feature2": {
+      "title": "Holistic Approach",
+      "description": "We integrate multiple aspects of your business into one seamless digital ecosystem, providing comprehensive solutions that improve both internal processes and customer engagement."
+    },
+    "feature3": {
+      "title": "Industry Expertise",
+      "description": "Our team has deep experience across various industries, allowing us to provide digital solutions that align with your unique market needs and challenges."
+    },
+    "feature4": {
+      "title": "Make Data-Driven Smart Decisions",
+      "description": "With big data analytics and artificial intelligence, we help businesses maximize the value of their data to make strategic decisions."
+    },
+    "button": "LET'S TALK",
+    "serviceSection": {
+      "heading": "Our services",
+      "service1": {
+        "title": "Digital transformation strategy consulting",
+        "description": "We provide tailored digital transformation solutions and roadmaps from assessing the current situation, proposing strategies, to customizing solutions based on industry and business size."
+      },
+      "service2": {
+        "title": "CRM/ERP system implementation",
+        "description": "CRM and ERP systems help businesses operate efficiently, from customer management to internal operations. CRM optimizes customer experiences, ERP provides comprehensive management, and both integrate seamlessly with existing tools."
+      },
+      "service3": {
+        "title": "Data analytics and smart reporting",
+        "description": "We deliver optimized data extraction tools with visual reports, intelligent predictions, and multi-channel integration from sources such as websites, CRM, and ERP systems."
+      },
+      "service4": {
+        "title": "Training and post-implementation technical support",
+        "description": "Digital transformation is not just about system installation; we ensure employees become proficient through detailed training, 24/7 support, and continuous improvements based on business needs."
+      }
+    },
+    "howWeWorkSection": {
+      "heading": "How do we work?",
+      "step1": {
+        "title": "Needs analysis and current state assessment",
+        "description": "Digital transformation begins with evaluating current processes and technologies, as well as analyzing business goals, to identify and address areas for improvement."
+      },
+      "step2": {
+        "title": "Planning and solution proposal",
+        "description": "We design a tailored digital transformation roadmap with solutions that meet your needs, address weaknesses, and include a clear implementation plan with transparent costs."
+      },
+      "step3": {
+        "title": "Technology implementation",
+        "description": "Our team of experts installs and customizes technology systems such as CRM, ERP, and data analytics. We ensure alignment with business processes and conduct system testing before deployment."
+      },
+      "step4": {
+        "title": "Operational support and team training",
+        "description": "We provide continuous operational support and employee training to ensure effective use of technology and system stability. A dedicated technical support team is always ready to address any issues."
+      }
+    },
+
+    "whyInvest": {
+      "heading": "Why should one invest in Digital Transformation",
+      "section1": {
+        "title": "Streamline Operations",
+        "description": "Implementing ERP and CRM systems optimizes workflows, reduces manual tasks, and enhances operational efficiency across your business."
+      },
+      "section2": {
+        "title": "Improve Customer Experience",
+        "description": "With digital tools like business apps and custom solutions, you can offer personalized, seamless interactions that enhance customer satisfaction."
+      },
+      "section3": {
+        "title": "Stay Competitive",
+        "description": "In industries like e-commerce, logistics, and education, staying ahead of digital trends is crucial for maintaining market relevance and growth."
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "What makes we different"
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do"
+    },
+    "ctaSection": {
+      "title": "LET'S COLLABORATE",
+      "subtitle": "Start a journey with us!",
+      "buttonText": "Let's talk",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    }
+  },
+  "cyberSecurity": {
+    "feature1": {
+      "title": "Tailored Solutions",
+      "description": "We provide customized security strategies based on your business’s specific needs and challenges."
+    },
+    "feature2": {
+      "title": "Proactive Defense",
+      "description": "Our 24/7 monitoring and threat detection actively identify and mitigate risks before they cause harm."
+    },
+    "feature3": {
+      "title": "Expert Team with Advanced Technology",
+      "description": "With experienced professionals and cutting-edge tools, we deliver robust security solutions to protect your business from all angles."
+    },
+    "heroSection": {
+      "heading1": "Fortify Your Business with Tailored Cyber",
+      "heading2": "Security and Proactive Protection",
+      "paragraph": "We offer comprehensive security solutions that protect your assets, maintain the integrity of your systems, and ensure compliance with regulatory requirements. With our expert team and advanced tools, we provide robust protection and continuous monitoring to keep your business secure in the ever-evolving cyber threat environment."
+    },
+    "featureSection": {
+      "heading": "The importance of having Professional Cyber Security",
+      "feature1": {
+        "title": "Prevent Financial Loss",
+        "description": "A single cyber attack can cause significant financial damage, including recovery costs and business interruptions."
+      },
+      "feature2": {
+        "title": "Protect Sensitive Information",
+        "description": "Safeguard your customers' personal and business-critical data to maintain trust and protect your reputation."
+      },
+      "feature3": {
+        "title": "Ensure Business Continuity",
+        "description": "Cyber security measures prevent operational disruptions, ensuring smooth business operations."
+      }
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do",
+      "project1": {
+        "projectName": "Skymate",
+        "projectTags": ["Web", "App"],
+        "description": "A brief description of the project.",
+        "technologyTag": ["React", "Node.js", "AWS"]
+      },
+      "project2": {
+        "projectName": "USC Card Stablecoin",
+        "projectTags": ["Blockchain", "Fintech"],
+        "description": "A brief description of the project.",
+        "technologyTag": ["Solidity", "Ethereum"]
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "What makes we different"
+    },
+
+    "contactSection": {
+      "title": "LET'S COLLABORATE",
+      "subtitle": "Start a journey with us!",
+      "buttonText": "Let's talk",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    }
+  },
+  "cloudComputing": {
+    "heroSection": {
+      "heading1": "Scalable Cloud Solutions for Seamless",
+      "heading2": "Growth and Performance Optimization",
+      "paragraph": "Whether you're using AWS, Google Cloud, Azure, or Digital Ocean, we offer tailored solutions that allow your systems to scale seamlessly as your business expands. Our services ensure that your applications are always optimized for performance, with the added benefit of continuous monitoring, alert systems, and maintenance. Utilizing advanced tools like Docker, Kubernetes, and Terraform, we provide a robust cloud infrastructure that grows with your business."
+    },
+    "feature1": {
+      "title": "Customized Cloud Solutions",
+      "description": "We work with various cloud platforms to create a solution tailored to your specific business needs, whether you’re on AWS, Azure, or another provider."
+    },
+    "feature2": {
+      "title": "Proactive Management and Monitoring",
+      "description": "Our 24/7 monitoring and alert systems ensure that any issues are detected and resolved quickly, minimizing downtime."
+    },
+    "feature3": {
+      "title": "Expert Team with Advanced Technology",
+      "description": "With experienced professionals and cutting-edge tools, we deliver robust security solutions to protect your business from all angles."
+    },
+    "featureSection": {
+      "heading": "Why Should You Invest in Cloud Computing and System Scaling",
+      "feature1": {
+        "title": "Cost Efficiency",
+        "description": "Pay for only the resources you use, avoiding unnecessary expenses while ensuring your system can handle increased demand when needed."
+      },
+      "feature2": {
+        "title": "Flexibility and Scalability",
+        "description": "As your business grows, your infrastructure will scale effortlessly, adapting to new challenges and increased traffic without compromising performance."
+      },
+      "feature3": {
+        "title": "Increased Reliability",
+        "description": "Cloud platforms such as AWS, Google Cloud, and Azure offer high availability and redundancy, ensuring your business remains operational at all times."
+      }
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do",
+      "project1": {
+        "projectName": "Skymate",
+        "projectTags": ["Web", "App"],
+        "description": "A brief description of the project.",
+        "technologyTag": ["React", "Node.js", "AWS"]
+      },
+      "project2": {
+        "projectName": "USC Card Stablecoin",
+        "projectTags": ["Blockchain", "Fintech"],
+        "description": "A brief description of the project.",
+        "technologyTag": ["Solidity", "Ethereum"]
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "What makes we different"
+    },
+    "contactSection": {
+      "title": "LET'S COLLABORATE",
+      "subtitle": "Start a journey with us!",
+      "buttonText": "Let's talk",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    }
+  },
+  "appDevelopment": {
+    "feature1": {
+      "title": "Consulting from Idea to Launch",
+      "description": "We work closely with you from the initial idea to app store publishing, ensuring your vision becomes a reality with expert guidance at every stage."
+    },
+    "feature2": {
+      "title": "UI/UX Focused",
+      "description": "Our design team emphasizes user experience and interface design, ensuring your app is not only functional but also visually appealing and easy to navigate."
+    },
+    "feature3": {
+      "title": "Performance Optimization",
+      "description": "We prioritize performance, making sure your app runs smoothly, quickly, and efficiently to provide the best possible experience for users."
+    },
+    "heroSection": {
+      "heading1": "From Concept to Launch - Crafting Apps",
+      "heading2": "That Perform and Delight",
+      "paragraph": "DayOne’s App Development service helps bring your app ideas to life, guiding you from the initial concept all the way to app store publishing. We provide full-service app development, covering everything from design and coding to performance optimization and ongoing support. Our team is dedicated to creating high-quality, user-friendly apps that are both visually appealing and highly functional, ensuring a seamless experience for your customers."
+    },
+    "featureSection": {
+      "heading": "The Importance of Having an Excellent App",
+      "card1": {
+        "heading": "Enhanced Customer Experience",
+        "description": "A well-designed, intuitive app improves user engagement and makes it easier for customers to interact with your brand."
+      },
+      "card2": {
+        "heading": "Increased Brand Visibility",
+        "description": "Being available in app stores allows your business to reach more users, improving brand recognition and accessibility."
+      },
+      "card3": {
+        "heading": "Improved Operational Efficiency",
+        "description": "Custom apps can streamline processes, automate tasks, and reduce manual work, allowing your team to focus on core business activities."
+      }
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do",
+      "project1": {
+        "projectName": "Skymate",
+        "projectTags": ["Web", "App"],
+        "description": "A brief description of the project.",
+        "technologyTag": ["React", "Node.js", "AWS"]
+      },
+      "project2": {
+        "projectName": "USC Card Stablecoin",
+        "projectTags": ["Blockchain", "Fintech"],
+        "description": "A brief description of the project.",
+        "technologyTag": ["Solidity", "Ethereum"]
+      }
+    },
+    "differentiatorsSection": {
+      "heading": "What makes we different"
+    },
+    "contactSection": {
+      "title": "LET'S COLLABORATE",
+      "subtitle": "Start a journey with us!",
+      "buttonText": "Let's talk",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    }
+  },
+  "portfolio": {
+    "ourProducts": "OUR PRODUCTS",
+    "ultimateExcellence": "The Ultimate In Excellence & Innovation",
+    "companyMission": "Dayone constantly strives to bring customers the products and experiences with the best quality. Your trust is the key for us to improve every day.",
+    "viewProject": "View Project"
+  },
+  "newDigitalTransformation": {
+    "masterhead": {
+      "heading1": "Digital Transformation",
+      "heading2": "A Breakthrough Step for Businesses",
+      "button": "LET'S TALK"
+    },
+    "hero": {
+      "heading1": "Digital Transformation",
+      "heading2": "Empowering businesses to automate processes, leverage data for smarter decision-making, and enhance customer experiences."
+    },
+    "feature1": {
+      "title": "Boost work efficiency by up to 50%",
+      "description": "We help businesses automate workflows, reduce manual tasks, and accelerate task processing. Modern management tools like CRM and ERP enable your team to work not only faster but also more efficiently."
+    },
+    "feature2": {
+      "title": "Enhance customer experience",
+      "description": "Technology allows businesses to reach customers quickly, personalize services, and increase satisfaction levels. Smart chatbots, tailored product recommendations, and fast-response systems are optimal solutions to retain customers."
+    },
+    "feature3": {
+      "title": "Optimize operational and technological costs",
+      "description": "Digital transformation helps businesses save on long-term costs by optimizing processes and leveraging modern technology. From minimizing resource waste to reducing staffing expenses, it’s all within reach."
+    },
+    "feature4": {
+      "title": "Make data-driven smart decisions",
+      "description": "By leveraging big data analytics and artificial intelligence, we help businesses maximize the value of their data to make strategic decisions."
+    },
+    "button": "LET'S TALK",
+    "serviceSection": {
+      "heading": "Our services",
+      "service1": {
+        "title": "Digital transformation strategy consulting",
+        "description": "We provide tailored digital transformation solutions and roadmaps from assessing the current situation, proposing strategies, to customizing solutions based on industry and business size."
+      },
+      "service2": {
+        "title": "CRM/ERP system implementation",
+        "description": "CRM and ERP systems help businesses operate efficiently, from customer management to internal operations. CRM optimizes customer experiences, ERP provides comprehensive management, and both integrate seamlessly with existing tools."
+      },
+      "service3": {
+        "title": "Data analytics and smart reporting",
+        "description": "We deliver optimized data extraction tools with visual reports, intelligent predictions, and multi-channel integration from sources such as websites, CRM, and ERP systems."
+      },
+      "service4": {
+        "title": "Training and post-implementation technical support",
+        "description": "Digital transformation is not just about system installation; we ensure employees become proficient through detailed training, 24/7 support, and continuous improvements based on business needs."
+      }
+    },
+    "howWeWorkSection": {
+      "heading": "How do we work?",
+      "step1": {
+        "title": "Needs analysis and current state assessment",
+        "description": "Digital transformation begins with evaluating current processes and technologies, as well as analyzing business goals, to identify and address areas for improvement."
+      },
+      "step2": {
+        "title": "Planning and solution proposal",
+        "description": "We design a tailored digital transformation roadmap with solutions that meet your needs, address weaknesses, and include a clear implementation plan with transparent costs."
+      },
+      "step3": {
+        "title": "Technology implementation",
+        "description": "Our team of experts installs and customizes technology systems such as CRM, ERP, and data analytics. We ensure alignment with business processes and conduct system testing before deployment."
+      },
+      "step4": {
+        "title": "Operational support and team training",
+        "description": "We provide continuous operational support and employee training to ensure effective use of technology and system stability. A dedicated technical support team is always ready to address any issues."
+      }
+    },
+    "ctaSection": {
+      "title": "Are you ready for digital transformation?",
+      "subtitle": "Contact us now for a free consultation with our experts"
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do"
+    }
+  },
+  "howWeWork": {
+    "masterhead": {
+      "heading1": "The way we work",
+      "heading2": "We Don't Just Work for You - We Work with You",
+      "button": "LET'S TALK"
+    },
+    "hero": {
+      "heading1": "Digital Transformation",
+      "heading2": "Empowering businesses to automate processes, leverage data for smarter decision-making, and enhance customer experiences."
+    },
+    "feature1": {
+      "title": "Boost work efficiency by up to 50%",
+      "description": "We help businesses automate workflows, reduce manual tasks, and accelerate task processing. Modern management tools like CRM and ERP enable your team to work not only faster but also more efficiently."
+    },
+    "feature2": {
+      "title": "Enhance customer experience",
+      "description": "Technology allows businesses to reach customers quickly, personalize services, and increase satisfaction levels. Smart chatbots, tailored product recommendations, and fast-response systems are optimal solutions to retain customers."
+    },
+    "feature3": {
+      "title": "Optimize operational and technological costs",
+      "description": "Digital transformation helps businesses save on long-term costs by optimizing processes and leveraging modern technology. From minimizing resource waste to reducing staffing expenses, it’s all within reach."
+    },
+    "feature4": {
+      "title": "Make data-driven smart decisions",
+      "description": "By leveraging big data analytics and artificial intelligence, we help businesses maximize the value of their data to make strategic decisions."
+    },
+    "button": "LET'S TALK",
+    "serviceSection": {
+      "heading": "We are not a ticket-taker team",
+      "service1": {
+        "title": "No \"Fake Agile\"",
+        "description": "At Dayone, we embrace true agility by balancing flexibility and precision. We set clear timelines and strategic plans to address errors effectively without compromising quality or deadlines."
+      },
+      "service2": {
+        "title": "No BA, we analyze as a team",
+        "description": "At Dayone, we go beyond executing tasks given by Business Analyst role. Each member of the Product Team has a BA mindset of their own."
+      },
+      "service3": {
+        "title": "Encourage open communication",
+        "description": "Our team is open to external conversation with clients as well as internal discussion with co-workers, which ensures seamless collaboration, fosters a culture of involvement and ownership in every project."
+      }
+    },
+    "contactSection": {
+      "collaborateText": "LET'S COLLABORATE",
+      "heading": "Got a project?",
+      "button": "Let's talk",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    },
+    "workingProcessSection": {
+      "heading": "Transparent and efficient working process",
+      "subheading": "At our company, communication is at the heart of everything we do.",
+      "step1": {
+        "title": "Customer understanding",
+        "description": "We believe exceptional results come from truly understanding our clients. By exploring your challenges and diving into your industry, business model, and goals, we craft solutions that address root issues. Prioritizing empathy and insight, we ensure every decision aligns with your vision and creates meaningful, impactful results."
+      },
+      "step2": {
+        "title": "Open communication",
+        "description": "Transparent communication is essential for trust and alignment. At Dayone, we prioritize open discussions among Tech Leaders, Product Managers, and clients. Regular updates through reports, check-ins, and demos ensure clarity and keep everyone informed, fostering collaboration and driving progress."
+      },
+      "step3": {
+        "title": "Design Thinking approach",
+        "description": "We tackle complex challenges with a Design Thinking approach, focusing on empathy, creativity, prototyping, and testing. This user-centered process helps us uncover opportunities, solve pain points, and deliver intuitive, impactful solutions tailored to your needs for lasting success."
+      },
+      "step4": {
+        "title": "Invite feedback",
+        "description": "At Dayone, we value your insights as key to project success. We actively seek feedback at every stage, ensuring your vision guides our process. Whether refining designs or adjusting priorities, we’re committed to delivering a product that exceeds your expectations in quality and reliability. By making feedback central, we create solutions that feel like true collaboration."
+      }
+    },
+    "projectsSection": {
+      "heading": "Check out what's we do"
+    },
+    "teamSection": {
+      "collaborateText": "LET'S COLLABORATE",
+      "heading": "Know about our exellent team",
+      "button": "Visit us",
+      "description": "We're a team of creatives who are excited about unique ideas and help fin-tech companies to create amazing identity by crafting top-notch UI/UX."
+    },
+    "guaranteeSection": {
+      "heading": "Guarantee your success",
+      "step1": {
+        "title": "Truly Understanding Client Needs",
+        "description": "At Dayone, we take the time to listen, ensure we fully grasp their needs and goals before moving forward. This allows us to tailor our solutions to each unique project."
+      },
+      "step2": {
+        "title": "Customized Technology to your Solution",
+        "description": "We tailor cutting-edge technology to meet your unique needs, ensuring every solution aligns perfectly with your goals."
+      },
+      "step3": {
+        "title": "Product Aligning with Market Demand",
+        "description": "We ensure your product not only aligns with your company’s vision but also meets current market demands by combining strategic insight and industry expertise."
+      },
+      "step4": {
+        "title": "Collaborative Approach for the Best Outcome",
+        "description": "We believe in working with our clients, not just for them. We offer ongoing consultation, guiding clients through the process and ensuring their input is incorporated at every stage."
+      },
+      "step5": {
+        "title": "On Time & On Budget",
+        "description": "By careful planning and agile execution, we are committed to delivering projects on time and within budget."
+      }
+    }
+  }
+}

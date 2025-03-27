@@ -1,0 +1,60 @@
+.works-carousel {
+  .works-header {
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  .works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .works-item {
+    width: 100%;
+  }
+
+  .custom-card {
+    display: flex;
+    flex-direction: row;
+    transition: transform 0.2s ease;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+
+  .card-image img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .custom-card-body {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card-content {
+    background-color: white;
+  }
+
+  /* Fix the height of card content on tablet devices */
+  @media (max-width: 1024px) {
+    .card-content {
+      flex: none !important;
+    }
+  }
+}

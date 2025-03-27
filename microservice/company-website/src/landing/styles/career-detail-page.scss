@@ -1,0 +1,198 @@
+.job-detail-page {
+  margin-top: 150px;
+  text-align: left;
+  .job-detail-page-tittle {
+    font-size: 24px;
+    font-weight: 700;
+    //color: #111;
+  }
+  //.job-detail-page-location {
+  //  margin: 15px 1px;
+  //  color: #111111;
+  //  font-size: 16px;
+  //  display: flex;
+  //  align-items: center;
+  //  margin-right: 8px;
+  //  .icon {
+  //    min-width: 25px;
+  //  }
+  //}
+  .job-detail-page-redirect {
+    text-align: center;
+  }
+  .job-detail-page-description {
+    h1,
+    h2 {
+      font-size: 20px !important;
+      font-weight: 700 !important;
+    }
+  }
+
+  .job-details-description {
+    padding: 40px;
+    margin-bottom: 30px;
+    h2 {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: relative;
+      color: #111111;
+    }
+    p {
+      font-size: 16px !important;
+      color: #111111;
+      margin-bottom: 10px;
+    }
+  }
+  .hr-contact {
+    padding-top: 8px;
+    border-radius: 8px 8px 8px 8px;
+    background: #fff;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 30px;
+    background-image: linear-gradient(white, white), linear-gradient(to right, #2152ff, #21d4fd);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    h2 {
+      padding: 20px 20px 0 20px;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      position: relative;
+      color: #111111;
+    }
+    p {
+      padding: 0 20px 0 20px;
+      font-size: 16px !important;
+      color: #111111;
+      margin-bottom: 10px;
+    }
+    .hr-contact-email {
+      padding: 0 20px 20px 20px;
+      display: flex;
+      margin-bottom: 5px;
+      font-size: 13px !important;
+      color: #111111;
+      .icon {
+        min-width: 20px;
+      }
+    }
+    .cv-value {
+      padding: 0 20px 0px 20px;
+      display: flex;
+      margin-bottom: 5px;
+      font-size: 13px !important;
+      color: #111111;
+      .icon {
+        min-width: 20px;
+      }
+    }
+
+    .cv-button {
+      padding: 0px 20px 20px 20px;
+      font-size: 0.75rem;
+      border-radius: 0.5rem;
+      border-color: #0072ff;
+      display: inline-block;
+      color: #0072ff !important;
+      background-color: transparent;
+      font-weight: bold;
+    }
+    .cv-button:hover {
+      box-shadow:
+        0 3px 5px -1px rgba(0, 0, 0, 0.09),
+        0 2px 3px -1px rgba(0, 0, 0, 0.07);
+      transform: scale(1.02);
+    }
+
+    .hr-contact-sub-tittle {
+      color: #000;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 550;
+      line-height: normal;
+      padding-left: 15px;
+    }
+    .hr-contact-email,
+    .hr-contact-phone {
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      color: #111;
+      svg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+      }
+    }
+    .hr-contact-link {
+      color: #585858;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: normal;
+      font-style: normal !important;
+
+      a {
+        text-decoration: none;
+        font-style: oblique !important;
+        margin-left: 5px;
+        margin-right: 5px;
+        svg {
+          margin-left: 3px;
+        }
+      }
+    }
+    .hr-contact-button {
+      color: #111;
+    }
+  }
+}
+
+.btn-apply-job {
+  background-image: linear-gradient(to right, #00c6ff 0%, #0072ff 51%, #00c6ff 100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.btn-apply-job:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.apply-card {
+  position: sticky;
+  top: 10rem;
+}
+
+@media (max-width: 767px) {
+  .job-detail-page {
+    margin-top: 100px;
+
+    .job-detail-page-tittle {
+      font-size: 18px;
+    }
+    .job-detail-page-description {
+      margin-bottom: 25px;
+    }
+  }
+}
