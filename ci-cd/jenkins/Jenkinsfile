@@ -1,0 +1,43 @@
+pipeline {  
+  agent any  
+
+  environment {  
+    GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
+    GHCR_REGISTRY = 'ghcr.io'  
+    GHCR_IMAGE_NAME = "${GHCR_REGISTRY}/ducthanhdao/dayone-company-website"  // Include registry URL
+    TAG = 'latest'  
+  }  
+
+  stages {  
+    stage('Checkout') {  
+      steps {  
+        git(  
+          url: GITHUB_REPO,  
+          credentialsId: 'github-pat',  
+          branch: 'feat/CI-CD-integration'  
+        )  
+      }  
+    }  
+
+    stage('Build Docker Image') {  
+      steps {  
+        script {  
+          docker.build(  
+            "${GHCR_IMAGE_NAME}:${TAG}",  
+            "--file microservice/company-website/Dockerfile ."  
+          )  
+        }  
+      }  
+    }  
+
+    stage('Push Docker Image') {  
+      steps {  
+        script {  
+          docker.withRegistry("https://${GHCR_REGISTRY}", '8451f591-34fb-4c65-b1ca-41e9f8c56459') {  // Use double quotes for interpolation  
+            docker.image("${GHCR_IMAGE_NAME}:${TAG}").push()  
+          }  
+        }  
+      }  
+    }  
+  }  
+}  
