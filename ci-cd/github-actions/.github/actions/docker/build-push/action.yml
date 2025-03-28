@@ -1,0 +1,58 @@
+name: Build And Push Docker Image
+description: "Build and push docker image"
+inputs:
+  registry:
+    description: "Registry"
+    required: true
+  docker_registry_username:
+    description: "Docker Registry Username"
+    required: true
+  docker_registry_token:
+    description: "Docker Registry Token"
+    required: true
+  secrets_file_dir:
+    description: "Secrets Files Directory"
+    required: true
+  repository:
+    description: "Repository"
+    required: true
+outputs:
+  image_package:
+    description: "Image Package"
+    value: ${{ steps.image-package.outputs.image_package }}
+runs:
+  using: "composite"
+  steps:
+  - name: Log in to GitHub Container Registry
+    uses: docker/login-action@v3
+    with:
+      registry: ${{ inputs.registry }}
+      username: ${{ inputs.docker_registry_username }}
+      password: ${{ inputs.docker_registry_token }}
+
+  - name: Extract metadata for Docker
+    id: meta
+    uses: docker/metadata-action@v5
+    with:
+      images: ${{ inputs.registry }}/${{ inputs.repository }}
+
+  - name: Get current date
+    id: date
+    shell: bash
+    run: echo "date=$(date +'%Y%m%d-%H%M%S')" >> $GITHUB_OUTPUT
+
+  - name: Set IMAGE_PACKAGE
+    id: image-package
+    shell: bash
+    run: |
+      echo "image_package=${{ steps.meta.outputs.tags }}-${{ github.sha && github.sha || '' }}-${{ steps.date.outputs.date }}"
+      echo "image_package=${{ steps.meta.outputs.tags }}-${{ github.sha && github.sha || '' }}-${{ steps.date.outputs.date }}" >> $GITHUB_OUTPUT
+
+  - name: Build and push Docker image
+    uses: docker/build-push-action@v5
+    with:
+      context: .
+      push: true
+      tags: ${{ steps.image-package.outputs.image_package }}
+      labels: ${{ steps.meta.outputs.labels }}
+      secret-files: ${{ inputs.secrets_file_dir }}

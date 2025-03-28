@@ -1,0 +1,73 @@
+name: Deploy using SSH
+description: "Build Nextjs App outside docker"
+inputs:
+  image_package:
+    description: "Docker image package"
+    required: true
+  docker_registry_username:
+    description: "Docker Registry Username"
+    required: true
+  docker_registry_token:
+    description: "Docker Registry Token"
+    required: true
+  ssh_host:
+    description: "SSH Host"
+    required: true
+  ssh_private_key:
+    description: "SSH Private Key"
+    required: true
+  ssh_username:
+    description: "SSH Username"
+    required: true
+runs:
+  using: "composite"
+  steps:
+  - name: Set up SSH
+    shell: bash
+    run: |
+      mkdir -p ~/.ssh
+      echo "${{ inputs.ssh_private_key }}" > ~/.ssh/deploy_key
+      chmod 600 ~/.ssh/deploy_key
+      echo "${{ inputs.ssh_host }} ssh-rsa $(ssh-keyscan -t rsa ${{ inputs.ssh_host }} 2>/dev/null | cut -d' ' -f3-)" >> ~/.ssh/known_hosts
+
+  - name: Deploy to production
+    env:
+      SSH_USER: ${{ inputs.ssh_username }}
+      SSH_HOST: ${{ inputs.ssh_host }}
+      DEPLOY_PATH: /home/${{ inputs.ssh_username }}/app
+      CONTAINER_NAME: new-website-d1
+    shell: bash
+    run: |
+      # Create deployment script
+      cat > deploy.sh <<-"EOF"
+      #!/bin/bash
+      set -e
+      # Get full image reference from meta output
+      export IMAGE_REF=$(echo "${{ inputs.image_package }}" | head -n 1 | tr -d "\n")
+      # Create .env file for docker-compose
+      cat > .env <<-ENVEOF
+      IMAGE_REF=${IMAGE_REF}
+      ENVEOF
+      echo "Using image reference: $IMAGE_REF"
+      # Log in to GitHub Container Registry
+      echo "Logging in to GitHub Container Registry..."
+      docker login ghcr.io -u "${{ inputs.docker_registry_username }}" -p "${{ inputs.docker_registry_token }}"
+      # Pull the image with SHA tag
+      echo "Pulling image with SHA tag..."
+      docker pull "$IMAGE_REF"
+      # Update the container using an explicit docker-compose file reference
+      echo "Updating container..."
+      docker compose -f docker-compose.yml --env-file .env pull
+      docker compose -f docker-compose.yml --env-file .env up -d --no-build $CONTAINER_NAME
+      # Cleanup old images
+      echo "Cleaning up old images..."
+      docker image prune -f
+      EOF
+      # Ensure deployment directory exists
+      ssh -i ~/.ssh/deploy_key $SSH_USER@$SSH_HOST "mkdir -p $DEPLOY_PATH"
+      # Copy deployment files
+      chmod +x deploy.sh
+      scp -i ~/.ssh/deploy_key deploy.sh $SSH_USER@$SSH_HOST:$DEPLOY_PATH/
+      scp -i ~/.ssh/deploy_key docker-compose.yml $SSH_USER@$SSH_HOST:$DEPLOY_PATH/
+      # Execute deployment
+      ssh -i ~/.ssh/deploy_key $SSH_USER@$SSH_HOST "cd $DEPLOY_PATH && ./deploy.sh"

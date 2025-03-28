@@ -1,0 +1,92 @@
+name: "[shared-workflow] Build Docker Image"
+on:
+  workflow_call:
+    inputs:
+      branch_name:
+        type: string
+        required: true
+    secrets:
+      aws_region:
+        required: true
+      docker_registry_token:
+        required: true
+      docker_registry_username:
+        required: true
+      next_public_strapi_cms_api:
+        required: true
+      aws_oidc_role_arn:
+        required: true
+      s3_bucket_name:
+        required: true
+      port:
+        required: true
+      node_env:
+        required: true
+      next_public_cdn_url:
+        required: false
+      default_locale:
+        required: true
+    outputs:
+      image_package:
+        description: "Image Package"
+        value: ${{ jobs.build-docker-image.outputs.image_package }}
+env:
+  REGISTRY: ghcr.io
+jobs:
+  build-docker-image:
+    name: Build Docker Image
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+      id-token: write
+    outputs:
+      image_package: ${{ steps.build-and-push-image.outputs.image_package }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.inputs.branch_name }}
+      
+      - name: Write Secret Key to .env
+        shell: bash
+        run: |
+          echo "NEXT_PUBLIC_STRAPI_CMS_API=${{ secrets.next_public_strapi_cms_api }}" > .env
+          echo "PORT=${{ secrets.port }}" >> .env
+          echo "NODE_ENV=${{ secrets.node_env }}" >> .env
+          echo "NEXT_PUBLIC_CDN_URL"="${{ secrets.next_public_cdn_url }}" >> .env
+          echo "DEFAULT_LOCALE=${{ secrets.default_locale }}" >> .env
+      
+      - name: Build Nextjs app
+        uses: ./.github/actions/build/next
+        with:
+          node-version: "20"
+
+      - name: Build and push Docker image
+        id: build-and-push-image
+        uses: ./.github/actions/docker/build-push
+        with:
+          registry: ${{ env.REGISTRY }}
+          docker_registry_username: ${{ secrets.docker_registry_username }}
+          docker_registry_token: ${{ secrets.docker_registry_token }}
+          secrets_file_dir: ./.env
+          repository: ${{ github.repository }}
+
+      # - name: Publish static files to S3
+      #   uses: ./.github/actions/aws/public-to-s3
+      #   with:
+      #     aws_region: ${{ secrets.aws_region }}
+      #     aws_oidc_role_arn: ${{ secrets.aws_oidc_role_arn }}
+      #     directory: ".next/static"
+      #     destination: "_next/static"
+      #     s3_bucket_name: ${{ secrets.s3_bucket_name }}
+
+      # - name: Publish static files to S3
+      #   uses: ./.github/actions/aws/public-to-s3
+      #   with:
+      #     aws_region: ${{ secrets.aws_region }}
+      #     aws_oidc_role_arn: ${{ secrets.aws_oidc_role_arn }}
+      #     directory: "public"
+      #     destination: "public"
+      #     s3_bucket_name: ${{ secrets.s3_bucket_name }}
+        

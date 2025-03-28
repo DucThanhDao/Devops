@@ -1,0 +1,40 @@
+name: Deploy to Production
+on:
+  push:
+    branches:
+      - develop
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  build-image:
+    name: Build Image
+    uses: ./.github/workflows/shared-build-docker-image.yml
+    with:
+      branch_name: "develop"
+    secrets:
+      aws_region: ${{ secrets.AWS_REGION }}
+      docker_registry_token: ${{ secrets.GHCR_TOKEN }}
+      docker_registry_username: ${{ secrets.GHCR_USERNAME }}
+      next_public_strapi_cms_api: ${{ secrets.NEXT_PUBLIC_STRAPI_CMS_API }}
+      aws_oidc_role_arn: ${{ secrets.AWS_OIDC_ROLE_ARN }}
+      s3_bucket_name: ${{ secrets.S3_BUCKET_NAME }}
+      port: ${{ secrets.PORT }}
+      node_env: ${{ secrets.NODE_ENV }}
+      # next_public_cdn_url: ${{ secrets.NEXT_PUBLIC_CDN_URL }}
+      default_locale: ${{ secrets.DEFAULT_LOCALE }}
+
+  deploy:
+    name: Deploy apps
+    needs: [build-image]
+    uses: ./.github/workflows/share-deploy-using-ssh.yml
+    with:
+      image_package: ${{ needs.build-image.outputs.image_package }}
+      branch_name: ${{ github.event.inputs.branch }}
+    secrets:
+      docker_registry_token: ${{ secrets.GHCR_TOKEN }}
+      docker_registry_username: ${{ secrets.GHCR_USERNAME }}
+      ssh_host: ${{ secrets.SSH_HOST }}
+      ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+      ssh_username: ${{ secrets.SSH_USERNAME }}
