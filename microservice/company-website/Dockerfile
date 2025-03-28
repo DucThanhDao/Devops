@@ -1,5 +1,5 @@
 # Stage 1: Build the Next.js app in standalone mode
-FROM node:20 AS builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 
 # Install dependencies
@@ -17,7 +17,7 @@ ENV DEFAULT_LOCALE=en
 RUN NEXT_TELEMETRY_DISABLED=1 npm run build
 
 # Stage 2: Create minimal production image
-FROM node:20
+FROM node:20-alpine
 WORKDIR /app
 
 # Copy only the required files from the builder stage
