@@ -1,43 +1,80 @@
-pipeline {  
-  agent any  
+@Library('devops-jenkins-shared-library') _
+import org.utils.DockerUtils
 
-  environment {  
-    GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
-    GHCR_REGISTRY = 'ghcr.io'  
-    GHCR_IMAGE_NAME = "${GHCR_REGISTRY}/ducthanhdao/dayone-company-website"  // Include registry URL
-    TAG = 'latest'  
-  }  
+pipeline {
+    agent any
 
-  stages {  
-    stage('Checkout') {  
-      steps {  
-        git(  
-          url: GITHUB_REPO,  
-          credentialsId: 'github-pat',  
-          branch: 'feat/CI-CD-integration'  
-        )  
-      }  
-    }  
+    environment {
+        REGISTRY = 'ghcr.io'
+        GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
+        GITHUB_BRANCH = 'feat/ci-cd-integration'
+    }
 
-    stage('Build Docker Image') {  
-      steps {  
-        script {  
-          docker.build(  
-            "${GHCR_IMAGE_NAME}:${TAG}",  
-            "--file microservice/company-website/Dockerfile ."  
-          )  
-        }  
-      }  
-    }  
+    stages {
+        stage('Checkout and Get Git Metadata') {
+            steps {
+                script {
+                    // Call the shared library function to checkout and get Git metadata
+                    def gitInfo = checkoutAndGetGitInfo(
+                        repoUrl: GITHUB_REPO,
+                        branch: GITHUB_BRANCH,
+                        credentialsId: 'github-pat' // Optional: Defaults to 'github-pat'
+                    )
 
-    stage('Push Docker Image') {  
-      steps {  
-        script {  
-          docker.withRegistry("https://${GHCR_REGISTRY}", '8451f591-34fb-4c65-b1ca-41e9f8c56459') {  // Use double quotes for interpolation  
-            docker.image("${GHCR_IMAGE_NAME}:${TAG}").push()  
-          }  
-        }  
-      }  
-    }  
-  }  
-}  
+                    // Store values in environment variables for downstream use
+                    env.REPO_OWNER = gitInfo.owner
+                    env.REPO_NAME = gitInfo.repository
+                    env.LAST_COMMIT_SHA = gitInfo.commitSha
+
+                    // Output the extracted information
+                    echo "Git owner: ${env.REPO_OWNER}"
+                    echo "Git repository: ${env.REPO_NAME}"
+                    echo "Git commit SHA: ${env.LAST_COMMIT_SHA}"
+                }
+            }
+        }
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    // Generate the Docker image tag using the utility function
+                    def timestamp = sh(script: 'date +%Y%m%d-%H%M%S', returnStdout: true).trim()
+                    def imageTag = DockerUtils.generateImageTag(
+                        registry: env.REGISTRY,
+                        owner: env.REPO_OWNER,
+                        repository: env.REPO_NAME,
+                        branch: env.GITHUB_BRANCH,
+                        gitSha: env.LAST_COMMIT_SHA,
+                        timestamp: timestamp
+                    )
+                    // Build the Docker image
+                    def buildInfo = dockerBuild(
+                        imageTag: imageTag,
+                        dockerfile: './microservice/company-website/Dockerfile'
+                    )
+                    echo "Built image: ${buildInfo.imageTag}"
+
+                    // Store the image and tag for later use
+                    env.IMAGE_TAG = buildInfo.imageTag
+                    env.IMAGE_OBJECT = buildInfo.image
+                }
+            }
+        }
+
+        stage('Push Docker Image') {
+            when {
+                expression { env.REGISTRY != null && env.REGISTRY != '' }
+            }
+            steps {
+                script {
+                    // Push the Docker image to the registry
+                    dockerPush(
+                        registry: env.REGISTRY,
+                        credentialsId: 'github-credential',
+                        image: env.IMAGE_OBJECT,
+                        imageTag: env.IMAGE_TAG
+                    )
+                }
+            }
+        }
+    }
+}
