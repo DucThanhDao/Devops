@@ -1,43 +1,56 @@
-pipeline {  
-  agent any  
+@Library('devops-jenkins-shared-library') _
 
-  environment {  
-    GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
-    GHCR_REGISTRY = 'ghcr.io'  
-    GHCR_IMAGE_NAME = "${GHCR_REGISTRY}/ducthanhdao/dayone-company-website"  // Include registry URL
-    TAG = 'latest'  
-  }  
+pipeline {
+    agent any
 
-  stages {  
-    stage('Checkout') {  
-      steps {  
-        git(  
-          url: GITHUB_REPO,  
-          credentialsId: 'github-pat',  
-          branch: 'feat/CI-CD-integration'  
-        )  
-      }  
-    }  
+    environment {
+        REGISTRY = 'ghcr.io'
+        GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
+        GITHUB_BRANCH = 'feat/CI-CD-integration'
+    }
 
-    stage('Build Docker Image') {  
-      steps {  
-        script {  
-          docker.build(  
-            "${GHCR_IMAGE_NAME}:${TAG}",  
-            "--file microservice/company-website/Dockerfile ."  
-          )  
-        }  
-      }  
-    }  
-
-    stage('Push Docker Image') {  
-      steps {  
-        script {  
-          docker.withRegistry("https://${GHCR_REGISTRY}", '8451f591-34fb-4c65-b1ca-41e9f8c56459') {  // Use double quotes for interpolation  
-            docker.image("${GHCR_IMAGE_NAME}:${TAG}").push()  
+    stages {
+        stage('Checkout') {  
+          steps {  
+            git(  
+              url: GITHUB_REPO,  
+              credentialsId: 'github-pat',  
+              branch: GITHUB_BRANCH  
+            )  
           }  
         }  
-      }  
-    }  
-  }  
-}  
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    // Build the Docker image
+                    def buildInfo = dockerBuild(
+                        repository: GITHUB_BRANCH,
+                        dockerfile: './microservice/company-website/Dockerfile'
+                    )
+                    echo "Built image: ${buildInfo.imageTag}"
+
+                    // Store the image and tag for later use
+                    env.IMAGE_TAG = buildInfo.imageTag
+                    env.IMAGE_OBJECT = buildInfo.image
+                }
+            }
+        }
+
+        stage('Push Docker Image') {
+            when {
+                expression { env.REGISTRY != null && env.REGISTRY != '' }
+            }
+            steps {
+                script {
+                    // Push the Docker image to the registry
+                    dockerPush(
+                        registry: env.REGISTRY,
+                        credentialsId: 'github-credential',
+                        image: env.IMAGE_OBJECT,
+                        imageTag: env.IMAGE_TAG
+                    )
+                }
+            }
+        }
+    }
+}
