@@ -7,7 +7,6 @@ pipeline {
     environment {
         REGISTRY = 'ghcr.io'
         GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
-        GITHUB_BRANCH = 'master'
     }
 
     stages {
@@ -15,9 +14,10 @@ pipeline {
             steps {
                 script {
                     // Call the shared library function to checkout and get Git metadata
+                    echo "Github Branch: ${env.BRANCH_NAME}"
                     def gitInfo = checkoutAndGetGitInfo(
                         repoUrl: GITHUB_REPO,
-                        branch: GITHUB_BRANCH,
+                        branch: env.BRANCH_NAME,
                         credentialsId: 'github-pat' // Optional: Defaults to 'github-pat'
                     )
 
@@ -37,12 +37,13 @@ pipeline {
             steps {
                 script {
                     // Generate the Docker image tag using the utility function
+                    echo "Github Branch: ${env.BRANCH_NAME}"
                     def timestamp = sh(script: 'date +%Y%m%d-%H%M%S', returnStdout: true).trim()
                     def imageTag = DockerUtils.generateImageTag(
                         registry: env.REGISTRY,
                         owner: env.REPO_OWNER,
                         repository: env.REPO_NAME,
-                        branch: env.GITHUB_BRANCH,
+                        branch: env.BRANCH_NAME,
                         gitSha: env.LAST_COMMIT_SHA,
                         timestamp: timestamp
                     )
