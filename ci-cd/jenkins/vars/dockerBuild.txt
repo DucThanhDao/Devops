@@ -1,10 +1,36 @@
-Purpose :
-- This reusable workflow builds a Docker image from a specified repository and Dockerfile.
-- It dynamically generates an image tag based on the Git commit SHA and timestamp.
-Inputs :
-- repository (required): The name of the Docker image repository (e.g., my-repo/my-app).
+Purpose:
+This reusable workflow builds a Docker image from a specified Dockerfile and assigns it a tag.
+
+Inputs:
+- imageTag (required): The tag to assign to the Docker image (e.g., my-repo/my-app:latest).
 - dockerfile (optional): Path to the Dockerfile (default: Dockerfile).
-Outputs :
-- Returns an object containing:
+
+Outputs:
+Returns an object containing:
 - image: The Docker image object.
-- imageTag: The dynamically generated image tag (e.g., my-repo/my-app:sha-timestamp).
+- imageTag: The tag assigned to the Docker image.
+
+Usage Example:
+@Library('your-shared-library-name') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Build Docker Image') {
+            steps {
+                script {
+                    def buildResult = dockerBuild(
+                        imageTag: 'my-repo/my-app:latest',
+                        dockerfile: 'path/to/Dockerfile'
+                    )
+                    echo "Built image: ${buildResult.imageTag}"
+                }
+            }
+        }
+    }
+}
+
+Implementation Details:
+1. Builds the Docker image using the docker.build() method, passing the specified imageTag and optional dockerfile path.
+2. Returns the Docker image object and its tag for downstream use (e.g., pushing the image to a registry).
