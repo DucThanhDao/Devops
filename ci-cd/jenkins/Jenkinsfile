@@ -6,7 +6,7 @@ pipeline {
     environment {
         REGISTRY = 'ghcr.io'
         GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
-        GITHUB_BRANCH = 'feat/CI-CD-integration'
+        GITHUB_BRANCH = 'master'
     }
 
     stages {
