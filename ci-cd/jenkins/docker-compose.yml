@@ -1,0 +1,48 @@
+version: "3"
+services:
+  jenkins-docker:
+    image: docker:dind
+    privileged: true
+    container_name: jenkins-dockers
+    volumes:
+      - jenkins-docker-certs:/certs/client
+      - jenkins-data:/var/jenkins_home
+    ports:
+      - "2376:2376"
+    restart: unless-stopped
+    environment:
+      - JENKINS_USER=admin
+      - JENKINS_PASSWORD=password
+      - DOCKER_TLS_CERTDIR=/certs
+    networks:
+      jenkins:
+        aliases:
+          - docker
+    command: ["--storage-driver", "overlay2"]
+  
+  jenkins-blueocean:
+    build:
+      context: .
+      dockerfile: Dockerfile.linux
+    image: myjenkins-blueocean:2.492.2-1
+    container_name: jenkins-blueocean
+    volumes:
+      - jenkins-data:/var/jenkins_home
+      - jenkins-docker-certs:/certs/client:ro
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    restart: on-failure
+    environment:
+      DOCKER_HOST: tcp://docker:2376
+      DOCKER_CERT_PATH: /certs/client
+      DOCKER_TLS_VERIFY: "1"
+    networks:
+      jenkins:
+
+volumes:
+  jenkins-docker-certs:
+  jenkins-data:
+networks:
+  jenkins:
+    external: true
