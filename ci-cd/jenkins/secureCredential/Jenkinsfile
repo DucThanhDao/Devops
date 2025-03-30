@@ -1,0 +1,34 @@
+pipeline {
+    agent any
+
+    environment {
+        // Define environment variables for SSH credentials
+        SSH_KEY_FILE = ''
+        SSH_USERNAME = ''
+        SSH_PASSPHRASE = ''
+        SSH_SERVER = 'dayoneteams.com'
+    }
+
+    stages {
+        stage('Setup SSH Credentials with Credentials Binding') {
+            steps {
+                script {
+                    // Use the sshUserPrivateKey binding to securely load the SSH key
+                    withCredentials([sshUserPrivateKey(
+                        credentialsId: 'dayone-ssh-credential',
+                        keyFileVariable: 'SSH_KEY_FILE',
+                        usernameVariable: 'SSH_USERNAME',
+                        passphraseVariable: 'SSH_PASSPHRASE'
+                    )]) {
+                        // Use the SSH key to connect to a remote server
+                        sh '''
+                            ssh -i "${SSH_KEY_FILE}" -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} << EOF
+                                echo "Connected successfully!"
+                            EOF
+                        '''
+                    }
+                }
+            }
+        }
+    }
+}
