@@ -1,4 +1,5 @@
 @Library('devops-jenkins-shared-library') _
+import org.utils.DockerUtils
 
 pipeline {
     agent any
@@ -10,21 +11,44 @@ pipeline {
     }
 
     stages {
-        stage('Checkout') {  
-          steps {  
-            git(  
-              url: GITHUB_REPO,  
-              credentialsId: 'github-pat',  
-              branch: GITHUB_BRANCH  
-            )  
-          }  
-        }  
+        stage('Checkout and Get Git Metadata') {
+            steps {
+                script {
+                    // Call the shared library function to checkout and get Git metadata
+                    def gitInfo = checkoutAndGetGitInfo(
+                        repoUrl: GITHUB_REPO,
+                        branch: GITHUB_BRANCH,
+                        credentialsId: 'github-pat' // Optional: Defaults to 'github-pat'
+                    )
+
+                    // Store values in environment variables for downstream use
+                    env.REPO_OWNER = gitInfo.owner
+                    env.REPO_NAME = gitInfo.repository
+                    env.LAST_COMMIT_SHA = gitInfo.commitSha
+
+                    // Output the extracted information
+                    echo "Git owner: ${env.REPO_OWNER}"
+                    echo "Git repository: ${env.REPO_NAME}"
+                    echo "Git commit SHA: ${env.LAST_COMMIT_SHA}"
+                }
+            }
+        }
         stage('Build Docker Image') {
             steps {
                 script {
+                    // Generate the Docker image tag using the utility function
+                    def timestamp = sh(script: 'date +%Y%m%d-%H%M%S', returnStdout: true).trim()
+                    def imageTag = DockerUtils.generateImageTag(
+                        registry: env.REGISTRY,
+                        owner: env.REPO_OWNER,
+                        repository: env.REPO_NAME,
+                        branch: env.GITHUB_BRANCH,
+                        gitSha: env.LAST_COMMIT_SHA,
+                        timestamp: timestamp
+                    )
                     // Build the Docker image
                     def buildInfo = dockerBuild(
-                        repository: GITHUB_BRANCH,
+                        imageTag: imageTag,
                         dockerfile: './microservice/company-website/Dockerfile'
                     )
                     echo "Built image: ${buildInfo.imageTag}"
