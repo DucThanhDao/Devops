@@ -1,0 +1,9 @@
+Purpose :
+- This reusable workflow pushes a Docker image to a container registry after authenticating with the provided credentials.
+Inputs :
+- registry (required): The container registry URL (e.g., docker.io, ghcr.io).
+- credentialsId (required): Jenkins credential ID for authenticating with the registry.
+- image (required): The Docker image object returned from dockerBuild.
+- imageTag (required): The tag of the Docker image to push.
+Outputs :
+- Pushes the Docker image to the specified registry.
