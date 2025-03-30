@@ -1,0 +1,10 @@
+Purpose :
+- This reusable workflow builds a Docker image from a specified repository and Dockerfile.
+- It dynamically generates an image tag based on the Git commit SHA and timestamp.
+Inputs :
+- repository (required): The name of the Docker image repository (e.g., my-repo/my-app).
+- dockerfile (optional): Path to the Dockerfile (default: Dockerfile).
+Outputs :
+- Returns an object containing:
+- image: The Docker image object.
+- imageTag: The dynamically generated image tag (e.g., my-repo/my-app:sha-timestamp).
