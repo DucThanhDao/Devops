@@ -1,9 +1,36 @@
-Purpose :
-- This reusable workflow pushes a Docker image to a container registry after authenticating with the provided credentials.
-Inputs :
+Purpose:
+This reusable workflow pushes a Docker image to a container registry after authenticating with the provided credentials.
+
+Inputs:
 - registry (required): The container registry URL (e.g., docker.io, ghcr.io).
 - credentialsId (required): Jenkins credential ID for authenticating with the registry.
-- image (required): The Docker image object returned from dockerBuild.
-- imageTag (required): The tag of the Docker image to push.
-Outputs :
-- Pushes the Docker image to the specified registry.
+- imageTag (required): The fully qualified tag of the Docker image to push (e.g., docker.io/my-repo/my-app:latest).
+
+Outputs:
+Pushes the Docker image to the specified registry.
+
+Usage Example:
+@Library('your-shared-library-name') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Push Docker Image') {
+            steps {
+                script {
+                    dockerPush(
+                        registry: 'docker.io',
+                        credentialsId: 'docker-hub-creds',
+                        imageTag: 'docker.io/my-repo/my-app:latest'
+                    )
+                }
+            }
+        }
+    }
+}
+
+Implementation Details:
+1. Authenticates with the container registry using the docker.withRegistry() method and the provided credentialsId.
+2. Pushes the Docker image using the docker.image("${imageTag}").push() method.
+3. Includes error handling to ensure registry and credentialsId are provided; otherwise, the pipeline fails.

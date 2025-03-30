@@ -1,0 +1,42 @@
+Purpose:
+This reusable workflow checks out a Git repository and extracts key information such as the repository owner, repository name, and the latest commit SHA.
+
+Inputs:
+- repoUrl (required): The URL of the Git repository (e.g., https://github.com/owner/repo.git).
+- branch (required): The branch to check out (e.g., main, develop).
+- credentialsId (optional): Jenkins credential ID for authenticating with the repository (default: github-pat).
+
+Outputs:
+Returns an object containing:
+- owner: The owner/organization of the GitHub repository.
+- repository: The name of the GitHub repository.
+- commitSha: The SHA of the latest commit on the checked-out branch.
+
+Usage Example:
+@Library('your-shared-library-name') _
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout and Get Git Info') {
+            steps {
+                script {
+                    def gitInfo = checkoutAndGetGitInfo(
+                        repoUrl: 'https://github.com/owner/repo.git',
+                        branch: 'main'
+                    )
+                    echo "Repository Owner: ${gitInfo.owner}"
+                    echo "Repository Name: ${gitInfo.repository}"
+                    echo "Latest Commit SHA: ${gitInfo.commitSha}"
+                }
+            }
+        }
+    }
+}
+
+Implementation Details:
+1. Checks out the specified Git repository using the checkout step with the provided repoUrl, branch, and optional credentialsId.
+2. Parses the repository URL to extract the owner and repository name using a regular expression.
+3. Retrieves the latest commit SHA using git rev-parse HEAD.
+4. Returns the extracted information (owner, repository, commitSha) for downstream use (e.g., tagging Docker images).
