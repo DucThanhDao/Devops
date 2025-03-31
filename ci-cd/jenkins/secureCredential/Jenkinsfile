@@ -3,13 +3,11 @@ pipeline {
 
     environment {
         // Define environment variables for SSH credentials
-        SSH_KEY_FILE = ''
-        SSH_USERNAME = ''
-        SSH_PASSPHRASE = ''
+        SSH_USERNAME = 'ubuntu'
         SSH_SERVER = 'dayoneteams.com'
         // AWS ENVs
-        AWS_ROLE_ARN = 'arn:aws:iam::783764570914:role/thanhdao-s3'
         AWS_ROLE_SESSION_NAME = 'JenkinsSession'
+        AWS_ROLE_SESSION_DURATION = 3600
     }
 
     stages {
@@ -23,43 +21,56 @@ pipeline {
                         usernameVariable: 'SSH_USERNAME',
                         passphraseVariable: 'SSH_PASSPHRASE'
                     )]) {
-                    // Use the SSH key to connect to a remote server
-                    sh '''
-                        ssh -i "${SSH_KEY_FILE}" -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} "echo \\"Connected successfully!\\""
-                    '''
+                        // Use the SSH key to connect to a remote server
+                        sh '''
+                            ssh -i "${SSH_KEY_FILE}" -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} "echo \\"Connected successfully!\\""
+                        '''
                     }
                 }
             }
         }
-        stage('Setup AWS Credentials with Credentials Binding') {
+        stage('Setup SSH Credentials with ssh agent') {
             steps {
                 script {
-                    // Use the aws binding to securely load AWS credentials
-                    withCredentials([aws(
-                        credentialsId: 'aws-thanhdao-credential',
-                        accessKeyVariable: 'AWS_ACCESS_KEY_ID',
-                        secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
-                        roleArn: 'AWS_ROLE_ARN',
-                        roleSessionName: env.AWS_ROLE_SESSION_NAME,
-                        roleSessionDurationSeconds: env.AWS_ROLE_SESSION_DURATION
-                    )]) {
-                        // Use AWS CLI to interact with AWS services
+                    sshagent(['dayone-ssh-credential']) {
                         sh '''
-                            # Verify AWS credentials
-                            aws sts get-caller-identity
-                        '''
-
-                        // Example: Assume the IAM role and perform actions
-                        sh '''
-                            # Assume the IAM role and list EC2 instances
-                            aws sts assume-role \
-                                --role-arn ${env.AWS_ROLE_ARN} \
-                                --role-session-name ${env.AWS_ROLE_SESSION_NAME} \
-                                --duration-seconds ${env.AWS_ROLE_SESSION_DURATION} \
+                            ssh -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} "echo \\"Connected successfully!\\""
                         '''
                     }
                 }
             }
+                
         }
+        // Pending
+        // stage('Setup AWS Credentials with Credentials Binding') {
+        //     steps {
+        //         script {
+        //             // Use the aws binding to securely load AWS credentials
+        //             withCredentials([aws(
+        //                 credentialsId: 'aws-thanhdao-credential',
+        //                 accessKeyVariable: 'AWS_ACCESS_KEY_ID',
+        //                 secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
+        //                 roleArn: 'AWS_ROLE_ARN',
+        //                 roleSessionName: env.AWS_ROLE_SESSION_NAME,
+        //                 roleSessionDurationSeconds: env.AWS_ROLE_SESSION_DURATION
+        //             )]) {
+        //                 // Use AWS CLI to interact with AWS services
+        //                 sh '''
+        //                     # Verify AWS credentials
+        //                     aws sts get-caller-identity
+        //                 '''
+
+        //                 // Example: Assume the IAM role and perform actions
+        //                 sh '''
+        //                     # Assume the IAM role and list EC2 instances
+        //                     aws sts assume-role \
+        //                         --role-arn ${env.AWS_ROLE_ARN} \
+        //                         --role-session-name ${env.AWS_ROLE_SESSION_NAME} \
+        //                         --duration-seconds ${env.AWS_ROLE_SESSION_DURATION} \
+        //                 '''
+        //             }
+        //         }
+        //     }
+        // }
     }
 }
