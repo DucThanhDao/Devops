@@ -59,7 +59,7 @@ pipeline {
                 script {
                     withKubeConfig([
                         credentialsId: 'kubeconfig-stg',
-                        namespace: ${env.KUBERNETES_NAMESPACE}
+                        namespace: env.KUBERNETES_NAMESPACE
                     ]) {
                         sh 'kubectl get pods'
                     }
