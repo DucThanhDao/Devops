@@ -54,7 +54,7 @@ pipeline {
                 }
             }
         }
-        stage('List pods') {
+        stage('Set up Kubernetes Credentials with Kubernetes CLI') {
             steps {
                 script {
                     withKubeConfig([
