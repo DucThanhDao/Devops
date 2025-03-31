@@ -55,11 +55,15 @@ pipeline {
             }
         }
         stage('List pods') {
-            withKubeConfig([
-                credentialsId: 'kubeconfig-stg',
-                namespace: ${env.KUBERNETES_NAMESPACE}
-            ]) {
-                sh 'kubectl get pods'
+            steps {
+                script {
+                    withKubeConfig([
+                        credentialsId: 'kubeconfig-stg',
+                        namespace: ${env.KUBERNETES_NAMESPACE}
+                    ]) {
+                        sh 'kubectl get pods'
+                    }
+                }
             }
         }
         // Pending
