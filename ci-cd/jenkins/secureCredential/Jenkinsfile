@@ -11,36 +11,35 @@ pipeline {
     }
 
     stages {
-        // stage('Setup SSH Credentials with Credentials Binding') {
-        //     steps {
-        //         script {
-        //             // Use the sshUserPrivateKey binding to securely load the SSH key
-        //             withCredentials([sshUserPrivateKey(
-        //                 credentialsId: 'dayone-ssh-credential',
-        //                 keyFileVariable: 'SSH_KEY_FILE',
-        //                 usernameVariable: 'SSH_USERNAME',
-        //                 passphraseVariable: 'SSH_PASSPHRASE'
-        //             )]) {
-        //                 // Use the SSH key to connect to a remote server
-        //                 sh '''
-        //                     ssh -i "${SSH_KEY_FILE}" -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} "echo \\"Connected successfully!\\""
-        //                 '''
-        //             }
-        //         }
-        //     }
-        // }
-        // stage('Setup SSH Credentials with ssh agent') {
-        //     steps {
-        //         script {
-        //             sshagent(['dayone-ssh-credential']) {
-        //                 sh '''
-        //                     ssh -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} "echo \\"Connected successfully!\\""
-        //                 '''
-        //             }
-        //         }
-        //     }
-                
-        // }
+        stage('Setup SSH Credentials with Credentials Binding') {
+            steps {
+                script {
+                    // Use the sshUserPrivateKey binding to securely load the SSH key
+                    withCredentials([sshUserPrivateKey(
+                        credentialsId: 'dayone-ssh-credential',
+                        keyFileVariable: 'SSH_KEY_FILE',
+                        usernameVariable: 'SSH_USERNAME',
+                        passphraseVariable: 'SSH_PASSPHRASE'
+                    )]) {
+                        // Use the SSH key to connect to a remote server
+                        sh '''
+                            ssh -i "${SSH_KEY_FILE}" -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} "echo \\"Connected successfully!\\""
+                        '''
+                    }
+                }
+            }
+        }
+        stage('Setup SSH Credentials with ssh agent') {
+            steps {
+                script {
+                    sshagent(['dayone-ssh-credential']) {
+                        sh '''
+                            ssh -o StrictHostKeyChecking=no ${SSH_USERNAME}@${SSH_SERVER} "echo \\"Connected successfully!\\""
+                        '''
+                    }
+                }
+            }
+        }
         stage('Setup AWS Credentials with AWS Steps') {
             steps {
                 script {
