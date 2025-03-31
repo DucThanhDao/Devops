@@ -93,25 +93,28 @@ pipeline {
 
     post {
         success {
-            // Decode the branch name to fix URL encoding issues
-            def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
-            slackSend(
-                channel: "${env.SLACK_CHANNEL}",
-                message: """Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
+            script {
+                // Decode the branch name to fix URL encoding issues
+                def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
+                slackSend(
+                    channel: "${env.SLACK_CHANNEL}",
+                    message: """Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
 - Branch: ${decodedBranchName}
 - Image: ${env.IMAGE_TAG}"""
-            )
+                )
+            }
         }
         failure {
-            // Decode the branch name to fix URL encoding issues
-            def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
-            slackSend(
-                channel: "${env.SLACK_CHANNEL}",
-                message: """Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
+            script {
+                // Decode the branch name to fix URL encoding issues
+                def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
+                slackSend(
+                    channel: "${env.SLACK_CHANNEL}",
+                    message: """Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
 - Branch: ${decodedBranchName}
 - Image: ${env.IMAGE_TAG}"""
-            )
+                )
+            }
         }
     }
-
 }
