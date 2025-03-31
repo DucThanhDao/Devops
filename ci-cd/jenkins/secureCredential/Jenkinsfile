@@ -8,6 +8,8 @@ pipeline {
         // AWS ENVs
         AWS_ROLE_SESSION_NAME = 'JenkinsSession'
         AWS_ROLE_SESSION_DURATION = 3600
+        // Kubernetes ENVs
+        KUBERNETES_NAMESPACE = 'development'
     }
 
     stages {
@@ -50,6 +52,14 @@ pipeline {
                         echo "AWS Identity: ${identity}"
                     }
                 }
+            }
+        }
+        stage('List pods') {
+            withKubeConfig([
+                credentialsId: 'kubeconfig-stg',
+                namespace: ${env.KUBERNETES_NAMESPACE}
+            ]) {
+                sh 'kubectl get pods'
             }
         }
         // Pending
