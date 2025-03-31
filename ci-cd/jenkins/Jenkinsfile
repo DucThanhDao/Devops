@@ -7,6 +7,7 @@ pipeline {
     environment {
         REGISTRY = 'ghcr.io'
         GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
+        SLACK_CHANNEL = '#jenkins-noti'
     }
 
     stages {
@@ -86,6 +87,35 @@ pipeline {
                 script {
                     echo "Deploying to production..."
                 }
+            }
+        }
+    }
+
+    post {
+        success {
+            script {
+                // Decode the branch name to fix URL encoding issues
+                def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
+                slackSend(
+                    channel: "${env.SLACK_CHANNEL}",
+                    color: 'good',
+                    message: """Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
+- Branch: ${decodedBranchName}
+- Image: ${env.IMAGE_TAG}"""
+                )
+            }
+        }
+        failure {
+            script {
+                // Decode the branch name to fix URL encoding issues
+                def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
+                slackSend(
+                    channel: "${env.SLACK_CHANNEL}",
+                    color: 'danger',
+                    message: """Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
+- Branch: ${decodedBranchName}
+- Image: ${env.IMAGE_TAG}"""
+                )
             }
         }
     }
