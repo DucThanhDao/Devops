@@ -7,6 +7,7 @@ pipeline {
     environment {
         REGISTRY = 'ghcr.io'
         GITHUB_REPO = 'https://github.com/DucThanhDao/Devops.git'
+        SLACK_CHANNEL = '#jenkins-noti'
     }
 
     stages {
@@ -89,4 +90,14 @@ pipeline {
             }
         }
     }
+
+    post {
+        success {
+            slackSend(channel: ${env.SLACK_CHANNEL}, message: "Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+        }
+        failure {
+            slackSend(channel: ${env.SLACK_CHANNEL}, message: "Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+        }
+    }
+
 }
