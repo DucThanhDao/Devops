@@ -93,10 +93,24 @@ pipeline {
 
     post {
         success {
-            slackSend(channel: "${env.SLACK_CHANNEL}", message: "Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+            // Decode the branch name to fix URL encoding issues
+            def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
+            slackSend(
+                channel: "${env.SLACK_CHANNEL}",
+                message: """Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
+- Branch: ${decodedBranchName}
+- Image: ${env.IMAGE_TAG}"""
+            )
         }
         failure {
-            slackSend(channel: "${env.SLACK_CHANNEL}", message: "Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+            // Decode the branch name to fix URL encoding issues
+            def decodedBranchName = URLDecoder.decode(env.BRANCH_NAME, 'UTF-8')
+            slackSend(
+                channel: "${env.SLACK_CHANNEL}",
+                message: """Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]
+- Branch: ${decodedBranchName}
+- Image: ${env.IMAGE_TAG}"""
+            )
         }
     }
 
