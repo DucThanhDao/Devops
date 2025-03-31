@@ -93,10 +93,10 @@ pipeline {
 
     post {
         success {
-            slackSend(channel: ${env.SLACK_CHANNEL}, message: "Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+            slackSend(channel: "${env.SLACK_CHANNEL}", message: "Build succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
         }
         failure {
-            slackSend(channel: ${env.SLACK_CHANNEL}, message: "Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+            slackSend(channel: "${env.SLACK_CHANNEL}", message: "Build failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
         }
     }
 
