@@ -1,0 +1,113 @@
+pipeline {
+    agent any
+
+    environment {
+        SLACK_CHANNEL = '#jenkins-noti' // Replace with your Slack channel
+    }
+
+    stages {
+        // Example 1: Basic Input with authorization submission
+        stage('Basic Input with Authorization') {
+            steps {
+                script {
+                    // Collect user input
+                    def userInput = input(
+                        message: 'Do you want to proceed with the deployment?',
+                        ok: 'Yes',
+                        // Only allow admin to approve deployment
+                        submitter: 'admin',
+                        parameters: [
+                            booleanParam(name: 'DEPLOY', defaultValue: true, description: 'Deploy to production?')
+                        ]
+                    )
+                }
+            }
+        }
+
+        // Example 2: Multi-parameter Input
+        stage('Multi-parameter Input') {
+            steps {
+                script {
+                    def environments = ['dev', 'staging', 'production']
+                    def userInput = input(
+                        message: 'Please provide deployment details:',
+                        parameters: [
+                            string(name: 'VERSION', defaultValue: '1.0.0', description: 'Version to deploy'),
+                            choice(name: 'ENVIRONMENT', choices: environments, description: 'Target environment'),
+                            booleanParam(name: 'CONFIRM', defaultValue: false, description: 'Confirm deployment?')
+                        ]
+                    )
+
+                    echo "Deploying version ${userInput.VERSION} to ${userInput.ENVIRONMENT}"
+                    if (!userInput.CONFIRM) {
+                        error('Deployment not confirmed. Aborting.')
+                    }
+                }
+            }
+        }
+
+        // Example 3: Timeout for Input
+        stage('Timeout Submission') {
+            steps {
+                script {
+                    try {
+                        def userInput = timeout(time: 1, unit: 'MINUTES') {
+                            input(
+                                message: 'Approve this step within 1 minutes',
+                                ok: 'Approve',
+                                parameters: [
+                                    string(name: 'COMMENT', defaultValue: '', description: 'Optional comment'),
+                                    booleanParam(name: 'CONFIRM', defaultValue: false, description: 'Confirm deployment?')
+                                ]
+                            )
+                        }
+                        echo "User input: ${userInput}"
+                        echo "User provided comment: ${userInput.COMMENT}"
+                    } catch (err) {
+                        echo err
+                        echo "No input received within the timeout period. Failing the build."
+                        error('Timeout occurred while waiting for input.')
+                    }
+                }
+            }
+        }
+
+        // Example 4: Combining Multiple Features
+        stage('Complex Input') {
+            steps {
+                script {
+                    try {
+                        def userInput = timeout(time: 10, unit: 'MINUTES') {
+                            input(
+                                message: 'Provide deployment details and confirm within 10 minutes.',
+                                submitter: 'admin',
+                                parameters: [
+                                    string(name: 'VERSION', defaultValue: '1.0.0', description: 'Version to deploy'),
+                                    choice(name: 'ENVIRONMENT', choices: ['dev', 'staging', 'production'], description: 'Target environment'),
+                                    booleanParam(name: 'CONFIRM', defaultValue: false, description: 'Confirm deployment?')
+                                ]
+                            )
+                        }
+
+                        echo "Deploying version ${userInput.VERSION} to ${userInput.ENVIRONMENT}"
+                        if (!userInput.CONFIRM) {
+                            error('Deployment not confirmed. Aborting.')
+                        }
+                    } catch (err) {
+                        echo "Timeout or error occurred: ${err.message}"
+                        error('Failed to get input.')
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            slackSend(channel: "${env.SLACK_CHANNEL}", message: "Pipeline succeeded: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+        }
+        failure {
+            slackSend(channel: "${env.SLACK_CHANNEL}", message: "Pipeline failed: ${env.JOB_NAME} [${env.BUILD_NUMBER}]")
+        }
+    }
+}
