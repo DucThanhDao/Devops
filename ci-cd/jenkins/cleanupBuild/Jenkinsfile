@@ -1,0 +1,22 @@
+pipeline {
+    agent any
+
+    triggers {
+        cron('H 0 * * *')  // Run daily at midnight
+    }
+
+    stages {
+        stage('Cleanup') {
+            steps {
+                script {
+                    def job = Jenkins.instance.getItemByFullName('Dayone company website')
+                    job.builds.each { build ->
+                        if (build.timestamp < (new Date() - 3)) {
+                            build.delete()
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
