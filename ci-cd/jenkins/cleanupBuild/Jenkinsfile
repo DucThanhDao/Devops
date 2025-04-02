@@ -9,9 +9,19 @@ pipeline {
         stage('Cleanup') {
             steps {
                 script {
+                    // Get the job by its full name
                     def job = Jenkins.instance.getItemByFullName('Dayone company website')
+
+                    // Calculate the threshold date (3 days ago)
+                    def threeDaysAgo = new Date() - 3
+
+                    // Iterate through all builds and delete those older than 3 days
                     job.builds.each { build ->
-                        if (build.timestamp < (new Date() - 3)) {
+                        // Convert build.timestamp (Calendar) to Date for comparison
+                        def buildDate = build.timestamp.time
+
+                        if (buildDate < threeDaysAgo) {
+                            echo "Deleting build: ${build.number} (Timestamp: ${buildDate})"
                             build.delete()
                         }
                     }
