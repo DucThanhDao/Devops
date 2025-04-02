@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+
+    triggers {
+        cron('* * * * *')  // Run every minute
+    }
+
+    stages {
+        stage('Example Stage') {
+            steps {
+                script {
+                    echo "This pipeline runs every minute."
+                }
+            }
+        }
+    }
+}
